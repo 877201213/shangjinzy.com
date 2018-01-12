@@ -1,0 +1,289 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-兵营介绍</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/main2.js"></script>
+    <script src="../js/utilities.js"></script>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../images/favicon.png">
+
+
+
+    <style type="text/css">
+        .select{
+            color: #FF6600;
+        }
+        .tool-content{
+            display:none;
+        }
+        .qrcodesj {
+            width: 160px;
+            height: 165px;
+            position: fixed;
+            right: 20px;
+            top: 430px;
+            background: #FFF url(../images/two.jpg);
+            background-size: contain;
+            border: 1px solid #EEE;
+        }
+        .w100{
+            width: 100%;
+        }
+        .sidemenu dd{
+            cursor:pointer;
+        }
+        .w50{
+            width: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="header">
+    <div class="container clear">
+        <a href="../index.html" class="logo"></a>
+
+
+        <div class="link clear">
+            <a href="../index.html">返回主页</a>
+            <a href="javascript:history.go(-1)">返回上一级</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏简介</h1>
+            <h2>Game Intro</h2>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../images/banner-farm02.png", "../images/banner-farm02.png"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+<div class="container clear">
+    <div class="side">
+        <dl class="sidemenu">
+            <dt>游戏资料</dt>
+
+            <dd class=select>
+                <a href="#">游戏介绍</a></dd>
+
+            <dd ><a href="Video.html">视频资料</a></dd>
+            <dd><a href="guide.html">新手指南</a></dd>
+        </dl>
+
+
+
+
+
+
+    </div>
+    <div class="main">
+        <div class="main-head">游戏介绍</div>
+
+        <dl class="main-farm-menu">
+            <dd><a href="Farm.html">游戏介绍</a></dd>
+            <dd><a href="Arms.html">士兵介绍</a></dd>
+            <dd><a href="Barr.html" class="select">兵营介绍</a></dd>
+            <dd><a href="Prop.html">道具介绍</a></dd>
+            <dd><a href="Joss.html">守卫先锋介绍</a></dd>
+        </dl>
+
+        <div class="main-farm">
+            <p>
+                赏金内，每位玩家共有12块兵营，玩家每次<b>升级基地</b>后，系统会赠送一块新的兵营。
+            </p>
+
+            <dl class="main-farm-land clear">
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/Barr/11.png" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：初级兵营</span>
+                        <span>介绍：条件太过艰苦，只能研发出最普通的士兵&nbsp;&nbsp;</span>
+                        <span>产出：艾斯特、雷斯</span>
+                    </div>
+                </dd>
+
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/Barr//22.png" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：中级兵营</span>
+                        <span>介绍：条件稍微改善些的兵营，可以研发出更多士兵</span>
+                        <span>产出：艾斯特、雷斯、穆得、科亚</span>
+                    </div>
+                </dd>
+
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/Barr/33.png" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：高级兵营</span>
+                        <span>介绍：条件较好的兵营，能够研发出较多种类士兵</span>
+                        <span>产出：艾斯特、雷斯、穆得、科亚、奥巴斯、玄甲</span>
+                    </div>
+                </dd>
+
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/Barr/44.png" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：神机营</span>
+                        <span>介绍：神奇的兵营，所有兵种都可以研发出来</span>
+                        <span>产出：所有的士兵（部分需要达到一定指定级别）</span>
+                    </div>
+                </dd>
+
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/Barr/55.png" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：水火营</span>
+                        <span>介绍：极其神秘的兵营，在游戏的某个特定时刻开启</span>
+                        <span>产出：神秘士兵</span>
+                    </div>
+                </dd>
+
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/Barr/66.png"/>
+                    </div>
+                    <div class="txt">
+                        <span>名称：战神营</span>
+                        <span>介绍：极其神秘的兵营，在游戏的某个特定时刻开启</span>
+                        <span>产出：神秘士兵</span>
+                    </div>
+                </dd>
+
+
+            </dl>
+
+            <p class="color-3">
+                <b>升级兵营需要的士兵说明</b>
+            </p>
+
+            <div class="tablebox">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>兵营名称</th>
+                        <th>钻石</th>
+                        <th>士兵</th>
+                        <th>其他</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Barr/11.png" width="30" /></td>
+                        <td>初级兵营</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Barr/22.png" width="30" /></td>
+                        <td>中级兵营</td>
+                        <td>100</td>
+                        <td>艾斯特150个、雷斯150个；</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Barr/33.png" width="30" /></td>
+                        <td>高级兵营</td>
+                        <td>300</td>
+                        <td>穆得225个、科亚225个；</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Barr/44.png" width="30" /></td>
+                        <td>神机营</td>
+                        <td>500</td>
+                        <td>奥巴斯300个、玄甲300个；</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Barr/55.png" width="30" /></td>
+                        <td>水火营</td>
+                        <td>未知</td>
+                        <td>未知</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Barr/66.png" width="30" /></td>
+                        <td>战神营</td>
+                        <td>未知</td>
+                        <td>未知</td>
+                        <td>-</td>
+                    </tr>
+
+                </table>
+            </div>
+</div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+
+  <script src="../js/foot2.js"></script>
+</body>
+</html>

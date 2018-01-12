@@ -1,0 +1,324 @@
+body{
+	background: url(../../images/score/bg2.png);
+}
+.red{
+	color: red;
+}
+.select{
+    color: #FF6600;
+}
+.tool-content{
+    display:none;
+}
+.qrcodesj {
+    width: 160px;
+    height: 165px;
+    position: fixed;
+    right: 20px;
+    top: 430px;
+    background: #FFF url(../../images/two.jpg);
+    background-size: contain;
+}
+.w100{
+    width: 100%;
+}
+.sidemenu dd{
+    cursor:pointer;
+}
+.w50{
+    width: 50px;
+}
+
+.newslist a:visited {
+    color: #aaa;
+}
+.main {
+    float: right;
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+
+#bigbox{
+	height: 600px;
+	width: 85%;
+	margin-left:7.5% ;
+	margin-right:7.5% ;
+	margin-top: 3%;
+}
+
+#leftbox{
+	width: 22%;
+	float: left;
+}
+#centerbox{
+	width: 50%;
+	margin-left: 3%;
+	float: left;
+	
+}
+#rightbox{
+	width: 24%;
+	height: 120%;
+	/*height: 520px;*/
+	margin-left: 1%;
+	float: left;
+}
+/* left box  start*/
+#table1{
+	height: 400px;
+	width: 105%;
+	
+}
+th{
+	width: 19%;
+	height: ;
+}
+#table1 tr  th a{
+	font-size: 1.8rem;
+}
+#table1 tr  th p{
+	font-size: 1.5rem;
+}
+.cornflowerblue{
+	color: cornflowerblue;
+}
+#table1 tr:first-child th a {
+	color:cornflowerblue
+}
+/* left box  end*/
+
+/* centerbox start*/
+
+#centerbox-center{
+	text-align: center;
+	font-size: 2.2rem;
+	
+	margin-top: -2%;
+}
+#centerbox-top{
+	width: 30%;
+	height: 10%;
+	margin: 0 auto;
+	margin-top: 5%;
+
+}
+#centerbox-middle{
+	width: 60%;
+	height: 10%;
+	margin: 0 auto;
+	margin-top: 5%;
+	
+}
+#centerbox-foot{
+	width: 90%;
+	height: 10%;
+	margin: 0 auto;
+	margin-top: 5%;
+	
+}
+#centerbox-foot tr:first-child th a{
+	color:cornflowerblue
+}
+#centerbox-foot tr th:first-child{
+	color:red
+}
+/* centerbox end*/
+
+/* rightbox start*/
+#rightbox-top{
+	text-align: center;
+}
+#rightbox-top a{
+	color: red;
+	font-size: 3rem;
+	
+}
+#rightbox-time{
+	font-size: 2.8rem;
+	text-align: center;
+}
+#rightbox-middle{
+	text-align: center;
+	font-size: 2.5rem;
+}
+#rightbox-middle a{
+	color: dodgerblue;
+}
+#rightbox-foot{
+	width: 90%;
+	height: 87%;
+	margin: 0 auto;
+	border-Radius:5px;
+} 
+#table1 tr:not(:first-child) th:first-child{
+	font-size: 2.5rem;
+} 
+#table1 tr{
+    height: 50px;
+}
+#table1 tr{
+	border-bottom: 1px solid #ccc;
+}
+/* rightbox end*/
+
+#table2 tr th {
+	margin-left: -10px;
+}
+#table2 tr th a{
+    font-family: monospace;
+	font-size:2.8rem ;
+	float: left;
+	margin-left: 10%;
+}
+#rightbox-top{
+    width: 450px;
+    padding: 10px;
+    margin: 0 auto;
+}
+#rightbox-time span{
+	padding: 2px;
+}
+#centerbox-foot{
+	font-family: monospace;
+}
+#centerbox-foot tr{
+	height: 35px;
+}
+
+#rightbox-foot table tr td {
+	text-align: center;
+
+}
+#rightbox-foot table{
+	width: 100%;
+	height: 100%;
+}
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
+#rightbox-foot ::-webkit-scrollbar  
+{  
+    width: 5px;  
+    height: 10px;  
+    background-color: #F5F5F5;  
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+#rightbox-foot ::-webkit-scrollbar-track  
+{  
+    border-radius: 0px;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+#rightbox-foot ::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    background-color: #555;  
+}  
+.font18{
+	font-size: 18px;
+	font-weight: bold;
+}
+.padtop15{
+    padding-top: 15px;
+}
+#rightbox-foot-in img{
+	width: 35px;
+	height: 35px;
+}
+.borderbotm1{
+	border-bottom: 1px solid #ccc;
+}
+.pad10{
+	padding:10px
+}
+.marginbotton8{
+	margin-bottom: -8px;
+}
+#centerbox-up-img{
+	display:none
+}
+#centercb{
+	width: 50%;
+}
+#weekbang,#monthbang{
+	color:cornflowerblue;
+	font-size: 2.2rem;
+	font-weight: bold;
+}
+#rightbox-foot-in{
+	text-align: center;
+}
+
+@media only screen and (max-width:768px) {
+    /*积分榜*/
+    body{
+		background: url(../../images/score/bg2.png) fixed top;
+		background-size: 100% 100%;
+	}
+   #leftbox{
+		width: 90%;
+	}
+	#centerbox{
+		width: 90%;
+	}
+	#centerbox-center{
+	    font-size: 1.3rem;
+	}
+	#rightbox{
+		width: 95%;
+		height: 120%;
+		margin-left: 1%;
+		float: left;
+	}
+	/* left box  start*/
+	#table1{
+		width: 110%;
+	}
+	th{
+		width: 21%;
+	}
+	#table1 tr  th a{
+		font-size: 0.9rem;
+	}
+	#table1 tr  th p{
+		font-size: 0.6rem;
+	}
+	/* left box  end*/
+	
+	#rightbox-foot{
+		width: 110%;
+		border-Radius:5px;
+		margin-left: -10px;
+	} 
+	#rightbox-top{
+	    width: 100%;
+	}
+	#centerbox-img{
+		display:none;
+	}
+	
+	#rightbox-foot table{
+	    font-size: 0.9rem;
+	}
+	.font18{
+		font-size: 1.4rem;
+	}
+	#table2{
+		width: 120%;
+	}
+	#table2 tr th a{
+		font-size:2.6rem ;
+	}
+	#centerbox-down-img{
+		display:none
+	}
+	#centerbox-up-img{
+		display:block
+	}
+	#leftcb,#rightcb{
+		display: none;
+	}
+	#centercb{
+		width: 100%;
+	}
+    /*积分榜*/
+}

@@ -1,0 +1,462 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-新手指南</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/main2.js"></script>
+    <script src="../js/utilities.js"></script>
+
+    <link rel="stylesheet" href="../css/photoswipe.css"> 
+    <link rel="stylesheet" href="../css/default-skin/default-skin.css">
+    <script src="../js/photoswipe.min.js"></script> 
+    <script src="../js/photoswipe-ui-default.min.js"></script> 
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../images/favicon.png">
+
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(../images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    #go-top {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 600;
+        display: none;
+    }
+    figure {
+        margin: 0;
+    }
+    </style>
+
+    
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../index.html" class="logo"></a>
+
+
+            <div class="link clear">
+                <a href="../index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+    
+
+
+
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>新手指南</h1>
+            <h2>User Guide</h2>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../images/banner-farm02.png", "../images/banner-farm02.png"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+    function playGame() {
+        if($(window).width() > 768) {
+            window.open("../computerGame.html");   
+            return false;
+        }
+        window.open("http://game.shangjinzy.com");  
+    }
+
+</script>
+
+<div class="container clear">
+    <div class="side">
+        <dl class="sidemenu">
+            <dt>游戏资料</dt>
+            <dd>
+                <a href="Farm.html">游戏介绍</a></dd>
+            <dd ><a href="Video.html">视频资料</a></dd>
+            <dd class=select><a href="#">新手指南</a></dd>
+        </dl>
+
+    </div>
+    <div class="main">
+        <div class="main-head">新手指南</div>
+		
+        <ul class="main-new-menu clear">
+        	<li><a class="button button-color-1" href="guide.html">入门操作及注意事项</a></li>
+        	<li><a class="button button-color-1" href="guide02.html">新手投放，集结体验</a></li>
+        	<li><a class="button button-color-1" href="guide03.html">金币充值、充钻操作流程</a></li>
+        	<li><a class="button button-color-1" href="guide04.html">基地升级操作流程</a></li>
+        	<li><a class="button button-color-1" href="guide05.html">兵营升级操作流程</a></li>
+        	<li><a class="button button-color-1" href="guide06.html">如何获得兵种</a></li>
+            <li><a class="button button-color-1" href="guide07.html">推广链接</a></li>
+            <li><a class="button button-color-1" href="guide08.html">激活守卫先锋</a></li>
+            <li><a class="button button-color-1" href="guide09.html">收兵符的作用</a></li>
+            <li><a class="button button-color-1" href="guide10.html">关于如何赠送交易</a></li>
+			<li><a class="button button-color-1" href="guide11.html">基地兵营升级参照表</a></li>
+			<li><a class="button button-color-1" href="guide12.html">兵营与基地升级条件关系</a></li>
+        </ul>
+		
+		<div class="main-new-guide" style="text-align: center">
+			<h2 style="text-align: center;margin-top: 25px">收兵符的作用</h2><br/>
+
+            <h4>1、当您的仓库有收兵铜符或收兵银符时，点击<font style="color:blue">“使用护符”</font>使用成功，当您使用成功之后，兵营在生产中，如您使用时间胶囊达到<font style="color:blue">“集结”</font>期状态的时候，切记不要立即点击<font style="color:blue">“集结”</font>；需要先关闭窗口，再次打开兵营窗口，这时集结按钮会有对应收兵符颜色特效显示，这时在点击<font style="color:blue">“集结”</font>则会增加您的产兵数量</h4><br/>
+            <div class="my-gallery">
+                <figure>
+                    <a href="../images/sbf1.png" data-size="800x1142"><img src="../images/sbf1.png"></a>
+                </figure>
+            </div>
+            <br/>
+
+            <h4 style="color:gray">（收兵铜符使用后效果如下图）</h4><br/>
+            <div class="my-gallery">
+                <figure>
+                    <a href="../images/sbftong.png" data-size="800x1142"><img src="../images/sbftong.png"></a>
+                </figure>
+            </div>
+            <br/>
+
+            <h4 style="color:gray">（收兵银符使用后效果如下图）</h4><br/>
+            <div class="my-gallery">
+                <figure>
+                    <a href="../images/sbfyin.png" data-size="800x1142"><img src="../images/sbfyin.png"></a>
+                </figure>
+            </div>
+            <br/>
+
+		</div>
+        
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="pswp__bg"></div>
+            <div class="pswp__scroll-wrap">
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+                <div id="pswp__ui1" class="pswp__ui pswp__ui--hidden">
+                
+                    <div class="pswp__top-bar">
+                        <div class="pswp__counter"></div>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)" onclick="photoClose()" ontouchstart="photoClose()"></button>
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+                    <!-- <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button> -->
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript">
+$(function(){
+    $('.main-new-guide img').click(function(){
+        $('.header').show();
+        if($('#pswp__ui1').hasClass('pswp__ui--hidden')) {
+            $('.header').hide();
+        } 
+    });
+});
+function photoClose() {
+    $('.header').show();
+}
+
+var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+    // parse slide data (url, title, size ...) from DOM elements 
+    // (children of gallerySelector)
+    var parseThumbnailElements = function(el) {
+        var thumbElements = el.childNodes,
+            numNodes = thumbElements.length,
+            items = [],
+            figureEl,
+            linkEl,
+            size,
+            item;
+
+        for(var i = 0; i < numNodes; i++) {
+
+            figureEl = thumbElements[i]; // <figure> element
+
+            // include only element nodes 
+            if(figureEl.nodeType !== 1) {
+                continue;
+            }
+
+            linkEl = figureEl.children[0]; // <a> element
+
+            size = linkEl.getAttribute('data-size').split('x');
+
+            // create slide object
+            item = {
+                src: linkEl.getAttribute('href'),
+                w: parseInt(size[0], 10),
+                h: parseInt(size[1], 10)
+            };
+
+
+
+            if(figureEl.children.length > 1) {
+                // <figcaption> content
+                item.title = figureEl.children[1].innerHTML; 
+            }
+
+            if(linkEl.children.length > 0) {
+                // <img> thumbnail element, retrieving thumbnail url
+                item.msrc = linkEl.children[0].getAttribute('src');
+            } 
+
+            item.el = figureEl; // save link to element for getThumbBoundsFn
+            items.push(item);
+        }
+
+        return items;
+    };
+
+    // find nearest parent element
+    var closest = function closest(el, fn) {
+        return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+    };
+
+    // triggers when user clicks on thumbnail
+    var onThumbnailsClick = function(e) {
+        e = e || window.event;
+        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+        var eTarget = e.target || e.srcElement;
+
+        // find root element of slide
+        var clickedListItem = closest(eTarget, function(el) {
+            return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+        });
+
+        if(!clickedListItem) {
+            return;
+        }
+
+        // find index of clicked item by looping through all child nodes
+        // alternatively, you may define index via data- attribute
+        var clickedGallery = clickedListItem.parentNode,
+            childNodes = clickedListItem.parentNode.childNodes,
+            numChildNodes = childNodes.length,
+            nodeIndex = 0,
+            index;
+
+        for (var i = 0; i < numChildNodes; i++) {
+            if(childNodes[i].nodeType !== 1) { 
+                continue; 
+            }
+
+            if(childNodes[i] === clickedListItem) {
+                index = nodeIndex;
+                break;
+            }
+            nodeIndex++;
+        }
+
+
+
+        if(index >= 0) {
+            // open PhotoSwipe if valid index found
+            openPhotoSwipe( index, clickedGallery );
+        }
+        return false;
+    };
+
+    // parse picture index and gallery index from URL (#&pid=1&gid=2)
+    var photoswipeParseHash = function() {
+        var hash = window.location.hash.substring(1),
+        params = {};
+
+        if(hash.length < 5) {
+            return params;
+        }
+
+        var vars = hash.split('&');
+        for (var i = 0; i < vars.length; i++) {
+            if(!vars[i]) {
+                continue;
+            }
+            var pair = vars[i].split('=');  
+            if(pair.length < 2) {
+                continue;
+            }           
+            params[pair[0]] = pair[1];
+        }
+
+        if(params.gid) {
+            params.gid = parseInt(params.gid, 10);
+        }
+
+        return params;
+    };
+
+    var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+        var pswpElement = document.querySelectorAll('.pswp')[0],
+            gallery,
+            options,
+            items;
+
+        items = parseThumbnailElements(galleryElement);
+
+        // define options (if needed)
+        options = {
+
+            // define gallery index (for URL)
+            galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+            getThumbBoundsFn: function(index) {
+                // See Options -> getThumbBoundsFn section of documentation for more info
+                var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                    pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                    rect = thumbnail.getBoundingClientRect(); 
+
+                return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+            }
+
+        };
+
+        // PhotoSwipe opened from URL
+        if(fromURL) {
+            if(options.galleryPIDs) {
+                // parse real index when custom PIDs are used 
+                // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                for(var j = 0; j < items.length; j++) {
+                    if(items[j].pid == index) {
+                        options.index = j;
+                        break;
+                    }
+                }
+            } else {
+                // in URL indexes start from 1
+                options.index = parseInt(index, 10) - 1;
+            }
+        } else {
+            options.index = parseInt(index, 10);
+        }
+
+        // exit if index not found
+        if( isNaN(options.index) ) {
+            return;
+        }
+
+        if(disableAnimation) {
+            options.showAnimationDuration = 0;
+        }
+
+        // Pass data to PhotoSwipe and initialize it
+        gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+    };
+
+    // loop through all gallery elements and bind events
+    var galleryElements = document.querySelectorAll( gallerySelector );
+
+    for(var i = 0, l = galleryElements.length; i < l; i++) {
+        galleryElements[i].setAttribute('data-pswp-uid', i+1);
+        galleryElements[i].onclick = onThumbnailsClick;
+    }
+
+    // Parse URL and open gallery if it contains #&pid=3&gid=1
+    var hashData = photoswipeParseHash();
+    if(hashData.pid && hashData.gid) {
+        openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
+    }
+};
+
+// execute above function
+initPhotoSwipeFromDOM('.my-gallery');
+</script>
+<script type="text/javascript" src="../js/foot2.js" ></script>
+   
+</body>
+</html>

@@ -1,0 +1,177 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-指挥官</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../../../css/animate.css" rel="stylesheet" />
+    <link href="../../../css/style.css" rel="stylesheet" />
+  <link href="../../../css/base.css" rel="stylesheet" />
+    <script src="../../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../../js/jquery.backstretch.min.js"></script>
+    <script src="../../../js/wow.min.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/main2.js"></script>
+    <script src="../../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../../../images/favicon.png">
+    
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content-div{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(../../../images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+        p{
+            text-indent: 2em;
+        }
+    </style>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../../index.html" class="logo"></a>
+
+
+            <div class="link clear">
+                <a href="../../../index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+
+            </div>
+
+        </div>
+    </div>
+    
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏公告</h1>
+            <h2>Game Data</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../../images/features-green1.jpg", "../../../images/features-green1.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+ 
+    <div class="container clear">
+        <div class="side tool-nav-bar">
+            <dl class="sidemenu">
+                <dt>游戏公告</dt>
+
+                <dd class=select><a href="../../../new.html">通知公告</a></dd>
+            </dl>
+
+        </div>
+        <div class="main">
+        <div class="newsitem">
+            <div class="newsitem-head">《赏金战役》受邀参加昆山2017 OMY动漫游戏文化节</div>
+            <div class="newsitem-info">
+                <span>来源：《赏金战役》运营团队</span>
+                <span>日期：2017-07-31</span>
+            </div>
+            <div class="newsitem-text">
+                
+                <p>2017ChinaJoy刚刚落下帷幕，不少小伙伴都说“今年都是电竞”。
+                    有媒体人说电竞已经成为越来越多游戏厂商接下来一段时间的发展方向，
+                    未来则可能有游戏公司致力于开发出一款适合电竞的游戏，并试图以此为生。
+                    借鉴ChinaJoy对国内外游戏行业蓬勃发展的影响，
+                    毗邻上海的昆山在8月5日至8月6日举办了一场本地的大型动漫活动---昆山2017 OMY动漫节，
+                    以促进本地IT、游戏及周边行业的发展和交流。借此良机，
+                    昆山天奇盛世网络科技有限公司迎东风而上，带着旗下手游《赏金战役》参加，首次面向玩家揭开《赏金战役》的神秘面纱。
+                </p>
+
+            　　<p>展位上,《赏金战役》团队将在展会上首次公开游戏画面及游戏玩法，关注的小伙伴请移驾展位了解详情。
+                《赏金战役》团队在展位提供游客休息区，还有多款互动小游戏，参与通关即有礼品拿。</p>
+
+                <img src="../../../images/new/3.png" width="100%"/>
+
+                <p>活动详情：</p>
+            
+                <p >1、活动时间：<br /></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;8月5日9：00--17：00<br /></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;8月6日9：00--17：00</p>
+                <p>2、活动对象</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;所有游戏爱好者<br /></p>
+                <p>3、参与方式</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;现场(更多互动小游戏详情，敬请关注官方微信公众号)<br /></p>
+                <p>4、活动地点</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;江苏省昆山市前进路科博馆</p></p>
+
+            </div>
+
+    </div>
+            <input type="button" value="上一篇" width="10%" onclick="location.href='9151.html'" style="float: left;margin-left:50px;text-overflow: ellipsis;">
+            <input type="button" value="下一篇" width="30%" onclick="location.href='9154.html'" style="float: right; margin-right: 50px;text-overflow: ellipsis;">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../../js/foot3.js"></script>
+    <!-- <div class="qrcodesj"></div>
+    <div class="downdiv">
+        <a href="javascript:void(0)" target="_blank">下载赏金战役</a>
+    </div> -->
+</body>
+</html>

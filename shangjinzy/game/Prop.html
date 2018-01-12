@@ -1,0 +1,226 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-道具介绍</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/main2.js"></script>
+    <script src="../js/utilities.js"></script>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../images/favicon.png">
+
+
+
+    <style type="text/css">
+        .select{
+            color: #FF6600;
+        }
+        .tool-content{
+            display:none;
+        }
+        .qrcodesj {
+            width: 160px;
+            height: 165px;
+            position: fixed;
+            right: 20px;
+            top: 430px;
+            background: #FFF url(../images/two.jpg);
+            background-size: contain;
+            border: 1px solid #EEE;
+        }
+        .w100{
+            width: 100%;
+        }
+        .sidemenu dd{
+            cursor:pointer;
+        }
+        .w50{
+            width: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="header">
+    <div class="container clear">
+        <a href="../index.html" class="logo"></a>
+
+
+        <div class="link clear">
+            <a href="../index.html">返回主页</a>
+            <a href="javascript:history.go(-1)">返回上一级</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏简介</h1>
+            <h2>Game Intro</h2>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../images/features-green1.jpg", "../images/features-green1.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+<div class="container clear">
+    <div class="side">
+        <dl class="sidemenu">
+            <dt>游戏资料</dt>
+
+            <dd class=select>
+                <a href="#">游戏介绍</a></dd>
+
+            <dd ><a href="Video.html">视频资料</a></dd>
+            <dd><a href="guide.html">新手指南</a></dd>
+        </dl>
+
+
+
+
+
+
+    </div>
+    <div class="main">
+        <div class="main-head">游戏介绍</div>
+
+        <dl class="main-farm-menu">
+            <dd><a href="Farm.html">游戏介绍</a></dd>
+            <dd><a href="Arms.html">士兵介绍</a></dd>
+            <dd><a href="Barr.html">兵营介绍</a></dd>
+            <dd><a href="Prop.html"  class="select">道具介绍</a></dd>
+            <dd><a href="Joss.html">守卫先锋介绍</a></dd>
+        </dl>
+
+        <div class="main-farm">
+            <div class="tablebox">
+                <table>
+                    <tr>
+                        <th>图标</th>
+                        <th>名称</th>
+                        <th>介绍</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/1111.jpg" width="60" /></td>
+                        <td>兵种</td>
+                        <td>宇宙空间中降落的神秘陨石，在兵营中会随机成长为一名战士</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/2222.jpg" width="60" /></td>
+                        <td>时间胶囊</td>
+                        <td>陨石降落时的伴生物，加速兵种成型，减少培养时间3小时，每个阶段仅限使用一次</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/3333.jpg" width="60" /></td>
+                        <td>战力符</td>
+                        <td>可以加速士兵某一个成长过程，限时五折</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/4444.jpg" width="60" /></td>
+                        <td>收兵铜符</td>
+                        <td>集结道具，组合集结剩余的残渣，可获得额外的兵种</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/5555.jpg" width="60" /></td>
+                        <td>收兵银符</td>
+                        <td>集结道具，组合集结剩余的残渣，可获得额外的兵种</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/6666.jpg" width="60" /></td>
+                        <td>充电棒</td>
+                        <td>给陨石通电，解除士兵疲劳状态</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/7777.jpg" width="60" /></td>
+                        <td>天使</td>
+                        <td>防止病毒在兵种训练过程中破坏，防止士兵死亡</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/8888.jpg" width="60" /></td>
+                        <td>黄神之剑</td>
+                        <td>这个星球上唯一可以破坏陨石的武器，进行更高效率的兵种重生</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/9999.jpg" width="60" /></td>
+                        <td>铜宝箱</td>
+                        <td>用200艾斯特、100雷斯，与人类交换未知的钻石，稀有道具</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/10.jpg" width="60" /></td>
+                        <td>银宝箱</td>
+                        <td>用100穆得、50科亚 ，与人类交换宝石，稀有道具</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/11.jpg" width="60" /></td>
+                        <td>金宝箱</td>
+                        <td>用50奥巴斯、25玄甲 ，与人类交换宝石，稀有道具、金币</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/12.jpg" width="60" /></td>
+                        <td>钻石宝箱</td>
+                        <td>用50伦特尔 ，与人类交换大量金币</td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+ <script src="../js/foot2.js"></script>
+</body>
+</html>

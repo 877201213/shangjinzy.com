@@ -1,0 +1,173 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-指挥官</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../../../css/animate.css" rel="stylesheet" />
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <link href="../../../css/base.css" rel="stylesheet" />
+    <script src="../../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../../js/jquery.backstretch.min.js"></script>
+    <script src="../../../js/wow.min.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/main2.js"></script>
+    <script src="../../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../../../images/favicon.png">
+    
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content-div{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(../../../images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    </style>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../../index.html" class="logo"></a>
+
+
+            <div class="link clear">
+                <a href="../../../index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+            </div>
+
+        </div>
+    </div>
+    
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏公告</h1>
+            <h2>Game Data</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../../images/features-pink.jpg", "../../../images/features-pink.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+    <div class="container clear">
+        <div class="side tool-nav-bar">
+            <dl class="sidemenu">
+                <dt>游戏公告</dt>
+                <dd class=select><a href="../../../new.html">通知公告</a></dd>
+            </dl>
+
+        </div>
+        <div class="main" style="text-indent: 2em;">
+        <div class="newsitem">
+            <div class="newsitem-head">赏金公测，有你做伴</div>
+            <div class="newsitem-info">
+                <span>来源：《赏金战役》运营团队</span>
+                <span>日期：2017-10-12</span>
+            </div>
+            <div class="newsitem-text">
+                           
+                    <p style="margin-left: 22px;">不知不觉中，赏金战役已经陪伴了大家半个月的时光，也正是有大家的陪伴，我们才能迈步向前；随着时间的临近，也即将进入公测阶段。赏金战役的公测活动也即将拉开序幕！感谢大家对赏金战役一如既往的支持，赏金能有你们这帮“家人”真的很幸运。公测后赏金将为你们带来更多的“家人”大家一起融入一个群体，像真正的一家人一样，开心的相处、开心的游戏，这也是我们的初衷，公测到来之际我们也为大家带来了一系列的公测活动。</p><br/>
+                    <p><b>内容如下：</b></p>
+                    <p>1.公测时将开放交易市场、用户中心两大功能能</p>
+                    <p>2.公测期间将在各大新闻媒体等实施大型推广计划</p>
+                    <p>3.公测线上活动根本停不下来（具体活动内容请期待最新详细公告）</p>
+                    <p>4.公测后兵种将进行限量出售</p>
+                    <p>5.排行榜前3名玩家，将会得到一定的幸运值</p>
+                    <p>6.赏金战役第3次线下大型体验活动将在昆山开启，届时欢迎各界领导前来参观</p>
+                    <p>7.公测时将开放更高等级的基地、兵营</p>
+                    <p>（6级以上升级所需的材料兵营暂时无法产出，只能通过现有士兵兑换宝箱进行获得，同时交易市场上的高级士兵数量完全由会员兑换获得的高级士兵进行挂单，公司不参与。）</p>
+                    <p>【在兑换活动期间内通过兑换高级士兵先升至水火营的玩家，兑换高级士兵活动结束后，水火营将是产出这些高级士兵的唯一途径】
+                    </p>
+                    <p class="text-center" style="text-indent: 0;"><img src="../../../images/new/4.png"/></p>
+                    <p style="text-align: center;text-indent: 0;">（兑换时间10.12号上午10:00—公测之日结束兑换活动）</p>
+                    <p style="text-align: center;text-indent: 0;">数量有限兑完为止</p><br/>
+
+                    <p><b>好消息：</b></p>
+                    <p>公司受邀将免费入驻花桥国际电子商务大厦办公</p>
+                    <p>游戏内新手引导、星灵、合成功能、全新主题背景、PK、士兵组合变化功能、全民抢BOSS将在公测后逐步推出</p><br/>
+
+                    <p><b>征求大家意见，同时将进行以下调整</b></p>
+                    <p>基地升级不满足所需条件时，点击升级，士兵,不在储存在基地内，让玩家多了一份选择性</p><br/>
+
+                    <p style="text-align: center"><b>让我们携手共进，一起展望未来</b></p>
+
+                    
+
+                    <p style="float:right">此活动最终解释权归天奇盛世所有</p>
+
+				<br />
+				<br />
+            </div>
+
+    </div>
+      </div>
+    </div>
+     <script type="text/javascript" src="../../../js/foot3.js"></script>
+
+    <!-- <div class="qrcodesj"></div>
+    <div class="downdiv">
+        <a href="javascript:void(0)" target="_blank">下载赏金战役</a>
+    </div> -->
+</body>
+</html>

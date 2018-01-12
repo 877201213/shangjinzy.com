@@ -1,0 +1,160 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-指挥官</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../../../css/animate.css" rel="stylesheet" />
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <link href="../../../css/base.css" rel="stylesheet" />
+    <script src="../../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../../js/jquery.backstretch.min.js"></script>
+    <script src="../../../js/wow.min.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/main2.js"></script>
+    <script src="../../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../../../images/favicon.png">
+    
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content-div{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(../../../images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    </style>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../../index.html" class="logo"></a>
+
+
+            <div class="link clear">
+                <a href="../../../index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+            </div>
+
+        </div>
+    </div>
+    
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏公告</h1>
+            <h2>Game Data</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../../images/features-pink.jpg", "../../../images/features-pink.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+ 
+    <div class="container clear">
+        <div class="side tool-nav-bar">
+            <dl class="sidemenu">
+                <dt>游戏公告</dt>
+                <dd class=select><a href="../../../new.html">通知公告</a></dd>
+            </dl>
+
+        </div>
+        <div class="main" style="text-indent: 1.5em;">
+        <div class="newsitem">
+            <div class="newsitem-head">《赏金大回馈》100000金币内测会员齐分享！</div>
+            <div class="newsitem-info">
+                <span>来源：《赏金战役》运营团队</span>
+                <span>日期：2017-10-08</span>
+            </div>
+            <div class="newsitem-text">
+                    <br />
+                    <p>赏金战役从内测至今已悄然陪伴了大家14个日夜，游戏内测的火爆程度直接拉近了会员与会员之间的热情。</p>
+                    <p>	此期间首先感谢广大会员们的支持与陪伴，有你们的存在我们才能做的更好，特此赏金战役运营团队经商讨决定，
+                    	为了回馈广大会员们在内测期间的热情支持，100000金币回馈活动孕育而生，
+                    	该活动的目的是希望内测的所有会员们都可以享受到该福利，同时也是为了赏金战役正式公测而做的一个准备；<br /></p>
+                    <p>活动将一直延续至游戏正式公测，（10-10号活动正式开启）希望每一位会员都能够享受到赏金战役带给你们的快乐。<br />  </p>
+                    <p>随着公测时间的步步紧逼，技术人员们也一直在加班加点，只为给大家呈现更好的游戏操作体验，
+                    	“赏金战役”暂定于（10-24号正式公测），公司决定在公测日举办一场盛大的公测仪式。
+                   让会员们玩的开心、玩的放心。</p> <p>	届时还有大家期待已久的交易市场、用户中心两大板块将同时开放，
+                    	游戏也会进一步优化，增加会员们的体验感；还有神秘的星灵也将被激活，不满足于头像框里的战士们，
+                    	在未来他们会进化成什么样子，以及进化之后的他们除了升级还能干吗，
+                    	当然还会添加更多游戏新版块及功能让大家玩的更加开心，请大家一起期待吧！</p><br />     
+                    	<img src="image/1008.jpg" />
+                   	<p style="font-size: 12px;">注：100000金币大回馈活动开启后将一直延续至公测，
+                   		10.8号晚20:00将关闭神机营伦特尔的产出并开放10个/组交易，届时伦特尔将只能通过宝箱进行获得。</p><br />
+                   	<p style="font-size: 12px; color: black;">	【宝箱开启功能暂时屏蔽，10-10号将统一开启】</p><br />
+                   	<p style="font-size: 12px;">此活动最终解释权归天奇盛世所有</p>
+				<br />
+            </div>
+
+    </div>
+      </div>
+    </div>
+     <script type="text/javascript" src="../../../js/foot3.js"></script>
+
+    <!-- <div class="qrcodesj"></div>
+    <div class="downdiv">
+        <a href="javascript:void(0)" target="_blank">下载赏金战役</a>
+    </div> -->
+</body>
+</html>

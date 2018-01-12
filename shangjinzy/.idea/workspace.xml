@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/game/Arms.html" line="145" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ea166d95-5ebe-4dc7-8ede-8074884fc6b7" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#1;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="market.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/market/market.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+              <folding>
+                <element signature="n#style#0;n#tr#0;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#1;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#2;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#3;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#4;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#5;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#6;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#7;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#8;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#9;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#10;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#11;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#12;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#13;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Arms.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/Arms.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Joss.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/Joss.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="122" column="41" lean-forward="false" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Prop.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/Prop.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="123" column="41" lean-forward="false" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Video.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/Video.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1152">
+              <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Farm.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/Farm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="122" column="41" lean-forward="false" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Barr.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game/Barr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="123" column="41" lean-forward="false" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
+              <folding>
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>favicon.png</find>
+      <find>fav</find>
+      <find>:</find>
+      <find>规则</find>
+      <find>footer-bottom</find>
+      <find>&lt;th&gt;名称&lt;/th&gt;</find>
+      <find>newslist</find>
+      <find>icon-window</find>
+      <find>第三十五条</find>
+      <find>cainiao2.html</find>
+      <find>gonggao-ul</find>
+      <find>.main .main-farm .main-farm-land dd .img img {</find>
+      <find>clear</find>
+      <find>stroke</find>
+      <find>前进吧</find>
+      <find>&lt;img alt=&quot;Author image&quot; draggable=&quot;false&quot;&gt;</find>
+      <find>&lt;div class=&quot;flex-viewport&quot; style=&quot;overflow: hidden; position: relative; height: 283px;&quot;&gt;</find>
+      <find>&amp;#xe608;</find>
+      <find>icon</find>
+      <find>608</find>
+      <find>e608</find>
+      <find>width=&quot;30&quot;</find>
+      <find>header</find>
+      <find>模拟经营</find>
+      <find>768</find>
+      <find>img</find>
+      <find>header .logo a {</find>
+      <find>../home/market/detail/800015.html</find>
+      <find>&lt;script src=&quot;../../../js/main.js&quot;&gt;&lt;/script&gt;</find>
+      <find>bannner</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>../images/market/</replace>
+      <replace>中级兵营</replace>
+      <replace>基地</replace>
+      <replace>培养</replace>
+      <replace>初级兵营</replace>
+      <replace>玄甲</replace>
+      <replace>守卫先锋</replace>
+      <replace>运营团队</replace>
+      <replace>:&lt;br /&gt;</replace>
+      <replace>规则&lt;br /&gt;</replace>
+      <replace>game/Farm.html</replace>
+      <replace>&lt;!--&lt;img alt=&quot;Author image&quot; draggable=&quot;false&quot;&gt;--&gt;</replace>
+      <replace>width=&quot;60&quot;</replace>
+      <replace>../person.html</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/about/about us.html" />
+        <option value="$PROJECT_DIR$/about/about.html" />
+        <option value="$PROJECT_DIR$/person/Primary.html" />
+        <option value="$PROJECT_DIR$/person/Interme.html" />
+        <option value="$PROJECT_DIR$/person/Senior.html" />
+        <option value="$PROJECT_DIR$/1.txt" />
+        <option value="$PROJECT_DIR$/gov.html" />
+        <option value="$PROJECT_DIR$/person/Guiding.html" />
+        <option value="$PROJECT_DIR$/aboutus.html" />
+        <option value="$PROJECT_DIR$/home/new/detail/9153.html" />
+        <option value="$PROJECT_DIR$/market.html" />
+        <option value="$PROJECT_DIR$/css/inner.css" />
+        <option value="$PROJECT_DIR$/css/fonts.css" />
+        <option value="$PROJECT_DIR$/game/Pet.html" />
+        <option value="$PROJECT_DIR$/person/first.html" />
+        <option value="$PROJECT_DIR$/person/four.html" />
+        <option value="$PROJECT_DIR$/person/third.html" />
+        <option value="$PROJECT_DIR$/person/second.html" />
+        <option value="$PROJECT_DIR$/cainiao2.html" />
+        <option value="$PROJECT_DIR$/js/foot.js" />
+        <option value="$PROJECT_DIR$/js/foot1.js" />
+        <option value="$PROJECT_DIR$/js/foot2.js" />
+        <option value="$PROJECT_DIR$/js/foot3.js" />
+        <option value="$PROJECT_DIR$/css/style2.css" />
+        <option value="$PROJECT_DIR$/css/base.css" />
+        <option value="$PROJECT_DIR$/home/user/index.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/1.html" />
+        <option value="$PROJECT_DIR$/home/new/detail/9154.html" />
+        <option value="$PROJECT_DIR$/home/new/detail/9155.html" />
+        <option value="$PROJECT_DIR$/home/new/detail/9152.html" />
+        <option value="$PROJECT_DIR$/home/new/detail/9151.html" />
+        <option value="$PROJECT_DIR$/new.html" />
+        <option value="$PROJECT_DIR$/person.html" />
+        <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/about/aboutus.html" />
+        <option value="$PROJECT_DIR$/about/chatus.html" />
+        <option value="$PROJECT_DIR$/about/joinus.html" />
+        <option value="$PROJECT_DIR$/about/User Agreement.html" />
+        <option value="$PROJECT_DIR$/Market.html" />
+        <option value="$PROJECT_DIR$/game/Arms.html" />
+        <option value="$PROJECT_DIR$/game/Barr.html" />
+        <option value="$PROJECT_DIR$/game/Farm.html" />
+        <option value="$PROJECT_DIR$/game/Joss.html" />
+        <option value="$PROJECT_DIR$/game/Prop.html" />
+        <option value="$PROJECT_DIR$/game/Video.html" />
+        <option value="$PROJECT_DIR$/market/market.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1388" />
+    <option name="height" value="1003" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sstp_4_Lhander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sstp_4_Lhander" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sstp_4_Lhander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sstp_4_Lhander" type="462c0819:PsiDirectoryNode" />
+              <item name="about" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sstp_4_Lhander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sstp_4_Lhander" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sstp_4_Lhander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sstp_4_Lhander" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sstp_4_Lhander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sstp_4_Lhander" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sstp_4_Lhander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sstp_4_Lhander" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="new" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sstp_4_Lhander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sstp_4_Lhander" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="new" type="462c0819:PsiDirectoryNode" />
+              <item name="detail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sstp_4_Lhander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sstp_4_Lhander" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sstp_4_Lhander" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sstp_4_Lhander" type="462c0819:PsiDirectoryNode" />
+              <item name="market" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\sstp_4_Lhander(2)\sstp_4_Lhander\sstp_4_Lhander\market" />
+      <recent name="C:\Users\Administrator\Desktop\sstp_4_Lhander(2)\sstp_4_Lhander\sstp_4_Lhander" />
+      <recent name="C:\Users\Administrator\Desktop\sstp_4_Lhander(2)\sstp_4_Lhander\home\user" />
+      <recent name="C:\Users\Administrator\Desktop\sstp_4_Lhander(2)\sstp_4_Lhander\home\new\detail" />
+      <recent name="C:\Users\Administrator\Desktop\sstp_4_Lhander(2)\sstp_4_Lhander\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\sstp_4_Lhander(2)\sstp_4_Lhander\game" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/sstp_4_Lhander/index.html" />
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ea166d95-5ebe-4dc7-8ede-8074884fc6b7" name="Default" comment="" />
+      <created>1505124875911</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1505124875911</updated>
+      <workItem from="1505124878270" duration="253000" />
+      <workItem from="1505179513711" duration="16617000" />
+      <workItem from="1505270149443" duration="41000" />
+      <workItem from="1505357092582" duration="822000" />
+      <workItem from="1505453123193" duration="2081000" />
+      <workItem from="1505455286677" duration="2796000" />
+      <workItem from="1505462729903" duration="2171000" />
+      <workItem from="1505465620315" duration="1293000" />
+      <workItem from="1505467315931" duration="1559000" />
+      <workItem from="1505471871855" duration="549000" />
+      <workItem from="1505472529873" duration="2973000" />
+      <workItem from="1505475634127" duration="339000" />
+      <workItem from="1505476198805" duration="431000" />
+      <workItem from="1505480056785" duration="52000" />
+      <workItem from="1505545616600" duration="15531000" />
+      <workItem from="1505562557242" duration="828000" />
+      <workItem from="1505563648488" duration="353000" />
+      <workItem from="1505697019872" duration="18375000" />
+      <workItem from="1505720838651" duration="9055000" />
+      <workItem from="1505732150609" duration="418000" />
+      <workItem from="1505788747769" duration="1031000" />
+      <workItem from="1505789797232" duration="3171000" />
+      <workItem from="1505793181994" duration="729000" />
+      <workItem from="1505798222567" duration="1553000" />
+      <workItem from="1505800596742" duration="3636000" />
+      <workItem from="1505805098431" duration="1090000" />
+      <workItem from="1505806540597" duration="290000" />
+      <workItem from="1505807142959" duration="1248000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="89285000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15833333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/game/.html" />
+    <entry file="file://$PROJECT_DIR$/home/new/detail/9153.html" />
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="95" column="16" lean-forward="true" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Pet.html" />
+    <entry file="file://$PROJECT_DIR$/images/favicon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person/first.html" />
+    <entry file="file://$PROJECT_DIR$/person/four.html" />
+    <entry file="file://$PROJECT_DIR$/person/third.html" />
+    <entry file="file://$PROJECT_DIR$/person/second.html" />
+    <entry file="file://$PROJECT_DIR$/home/market/detail/800000.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/foot1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/foot2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/foot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="33" />
+          <folding>
+            <marker date="1505697680857" expanded="true" signature="172:191" ph="..." />
+            <marker date="1505697680857" expanded="true" signature="194:200" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="200:206" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="212:218" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="218:224" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="230:236" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="236:242" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="248:254" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="254:260" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="266:272" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="272:278" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="284:290" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="290:296" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="302:308" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="308:314" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="320:326" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="326:332" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="338:344" ph=" " />
+            <marker date="1505697680857" expanded="true" signature="787:802" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/foot3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="33" column="30" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/user/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="35" column="21" lean-forward="false" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/user/giveHistory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="36" column="45" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ionicons/css/ionicons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/micons/micons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3927">
+          <caret line="294" column="21" lean-forward="true" selection-start-line="294" selection-start-column="21" selection-end-line="294" selection-end-column="21" />
+          <caret line="293" column="20" lean-forward="true" selection-start-line="293" selection-start-column="20" selection-end-line="293" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ionicons/css/ionicons.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="61" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/ionicons/fonts/ionicons.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="239" column="17" lean-forward="false" selection-start-line="239" selection-start-column="15" selection-end-line="239" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/fonts.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/inner.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/vendor.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/favicon.png" />
+    <entry file="file://$PROJECT_DIR$/1.html" />
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="267" column="40" lean-forward="false" selection-start-line="267" selection-start-column="37" selection-end-line="267" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/new/detail/9155.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="59" column="59" lean-forward="false" selection-start-line="59" selection-start-column="59" selection-end-line="59" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/new/detail/9152.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/new/detail/9151.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/animate.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cainiao2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="10" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/person.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="105" column="104" lean-forward="false" selection-start-line="105" selection-start-column="104" selection-end-line="105" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about/chatus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about/joinus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about/User Agreement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home/new/detail/9154.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about/aboutus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="21" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Market.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#1;n#div#1;n#div#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Arms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Barr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="123" column="41" lean-forward="false" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
+          <folding>
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Farm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="122" column="41" lean-forward="false" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Joss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="122" column="41" lean-forward="false" selection-start-line="122" selection-start-column="41" selection-end-line="122" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Prop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="123" column="41" lean-forward="false" selection-start-line="123" selection-start-column="41" selection-end-line="123" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="133" column="9" lean-forward="true" selection-start-line="133" selection-start-column="9" selection-end-line="133" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/market/market.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#2;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#3;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#4;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#5;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#6;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#7;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#8;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#9;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#10;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#11;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#12;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#13;n#table#0;n#table#0;n#div#0;n#div#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

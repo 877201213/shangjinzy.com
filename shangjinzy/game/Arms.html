@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-士兵介绍</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/main2.js"></script>
+    <script src="../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../images/favicon.png">
+
+
+
+    <style type="text/css">
+        .select{
+            color: #FF6600;
+        }
+        .tool-content{
+            display:none;
+        }
+        .qrcodesj {
+            width: 160px;
+            height: 165px;
+            position: fixed;
+            right: 20px;
+            top: 430px;
+            background: #FFF url(../images/two.jpg);
+            background-size: contain;
+            border: 1px solid #EEE;
+        }
+        .w100{
+            width: 100%;
+        }
+        .sidemenu dd{
+            cursor:pointer;
+        }
+        .w50{
+            width: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="header">
+    <div class="container clear">
+        <a href="../index.html" class="logo"></a>
+
+
+        <div class="link clear">
+            <a href="../index.html">返回主页</a>
+            <a href="javascript:history.go(-1)">返回上一级</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏简介</h1>
+            <h2>Game Intro</h2>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../images/banner-farm01.png", "../images/banner-farm01.png"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+<div class="container clear">
+    <div class="side">
+        <dl class="sidemenu">
+            <dt>游戏资料</dt>
+            <dd class=select>
+                <a href="#">游戏介绍</a></dd>
+
+            <dd ><a href="Video.html">视频资料</a></dd>
+            <dd><a href="guide.html">新手指南</a></dd>
+        </dl>
+
+
+    </div>
+    <div class="main">
+        <div class="main-head">游戏介绍</div>
+
+        <dl class="main-farm-menu">
+            <dd><a href="Farm.html">游戏介绍</a></dd>
+            <dd><a href="Arms.html"  class="select">士兵介绍</a></dd>
+            <dd><a href="Barr.html">兵营介绍</a></dd>
+            <dd><a href="Prop.html">道具介绍</a></dd>
+            <dd><a href="Joss.html">守卫先锋介绍</a></dd>
+        </dl>
+
+        <div class="main-farm">
+            <div class="tablebox">
+                <table>
+                    <tr>
+                        <th>头像</th>
+
+                        <th>名称</th>
+                        <th>产出兵营</th>
+                        <th>介绍</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800002.png" width="60"  /></td>
+                        <td>艾斯特</td>
+                        <td>初级兵营、中级兵营、高级兵营、神机营</td>
+                        <td>不善言语却甘愿牺牲自己与人类交换金币，促进兵营基地建设</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800003.png" width="60" /></td>
+                        <td>雷斯</td>
+                        <td>初级兵营、中级兵营、高级兵营、神机营</td>
+                        <td>速度最快的战士，却愿低下高贵的头颅换取兵营基地的建设</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800004.png" width="60" /></td>
+                        <td>穆得</td>
+                        <td>中级兵营、高级兵营、神机营</td>
+                        <td>一位高效率的战士，宁愿牺牲自己也要获得能够激活领袖的宝石</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800005.png" width="60" /></td>
+                        <td>科亚</td>
+                        <td>中级兵营、高级兵营、神机营</td>
+                        <td>超级自恋的家伙，但是危机来临却能够挺身而出</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800006.png" width="60"/></td>
+                        <td>奥巴斯</td>
+                        <td>高级兵营、神机营</td>
+                        <td>较高级别的战士，但是为了兵营基地建设会毫不犹豫地奉献自己</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800007.png" width="60"/></td>
+                        <td>玄甲</td>
+                        <td>高级兵营、神机营</td>
+                        <td>当能源匮乏，甘愿低下身份以换取微薄的金币维持建设</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800008.png" width="60" /></td>
+                        <td>伦特尔</td>
+                        <td>神机营</td>
+                        <td>强大而又啰嗦的特伦尔，充满了神秘的力量。
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800009.png" width="60"/></td>
+                        <td>迅影</td>
+                        <td>神机营</td>
+                        <td>7级及以上才能研发出的高级战士，却为拯救狂信徒甘愿牺牲自己</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800010.png" width="60"/></td>
+                        <td>克罗</td>
+                        <td>神机营</td>
+                        <td>8级及以上才能研发出的高级战士，却为拯救狂信徒甘愿牺牲自己</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800011.png" width="60"/></td>
+                        <td>羽刃</td>
+                        <td>神机营</td>
+                        <td>9级及以上才能研发出的高级战士，却为拯救狂信徒甘愿牺牲自己</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800012.png" width="60" /></td>
+                        <td>亚特</td>
+                        <td>神机营</td>
+                        <td>10级及以上才能研发出的高级战士，却为拯救狂信徒甘愿牺牲自己</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800013.png" width="60"/></td>
+                        <td>圣洛丽</td>
+                        <td>初级兵营、中级兵营、高级兵营、神机营</td>
+                        <td>狂信徒醒悟后集结所有兵种而成的强大战士，所向无敌</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/market/800014.png" width="60"/></td>
+                        <td>卡拉</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="../images/market/800015.png" width="60"/></td>
+                        <td>狂蜂</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </table>
+                <br /><br />
+
+                <p class="color-3">
+                    <b></b>
+                </p>
+
+            </div>
+        </div>
+        
+        
+        <p class="arms-p-img">士兵生长周期表</p><br/>
+        <img style="width: 600px" src="../images/arms-table.jpg">
+    </div>
+</div>
+
+<script type="text/javascript" src="../js/foot2.js" ></script>
+</body>
+</html>

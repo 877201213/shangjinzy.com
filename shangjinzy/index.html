@@ -1,0 +1,818 @@
+﻿<html class="no-js" lang="en"><!--<![endif]--><head>
+    <!--- basic page needs================================================== -->
+    <meta charset="utf-8">
+    <title>赏金战役</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- mobile specific metas================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <!-- CSS================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <!-- script================================================== -->
+
+
+    <!-- favicons================================================== -->
+    <link rel="icon" href="images/favicon.png">
+    <style type="text/css">
+        .bg {
+            background-image: url(./images/graybg-68.png);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+        }
+
+        .tishi-close {
+            background-image: url(./images/close-67.png);
+            width: 17px;
+            height: 17px;
+            position: absolute;
+            right: 650px;
+            top: 120px;
+            cursor: pointer;
+        }
+
+        .white-content {
+            position: absolute;
+            /*top: 50%;*/
+            top:300px;
+            margin-left:-300px;
+            left: 50%;
+            margin-top:-160px;
+            width: 600px;
+            height: 315px;
+            padding: 0px;
+            border: 0px solid orange;
+            background-color:#fff;
+            z-index:10001;
+            overflow: auto;
+            height: 60%;
+            display: none;
+        }
+        .white-content-mobile {
+            position: absolute;
+            top: 250px;
+            left: 5%;
+            margin-top: -160px;
+            width: 90%;
+            height: 315px;
+            padding: 0px;
+            border: 0px solid orange;
+            background-color: #fff;
+            z-index: 10001;
+            overflow: auto;
+            height: 60%;
+        }
+        .close-popup1 {
+            position: absolute;
+            cursor: pointer;
+            display: block;
+            width: 30px;
+            height: 30px;
+            color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            font: 0/0 a;
+            text-shadow: none;
+            color: transparent;
+        }
+        .close-popup1 {
+            display: block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            font-family: "Ionicons";
+            content: "\f2d7";
+            font-size: 21px;
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+    <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+
+<body id="top">
+
+<script type="text/javascript">
+    $(function() {
+        // if($(window).width() <= 768) {
+        $('#menu-a').click(function(){
+            if($('#menu-a').hasClass('is-clicked')) {
+                $('body').css('overflow','hidden');
+            }else {
+                $('body').css('overflow','');
+            }
+            var height = $(window).height()-66;
+            $('#main-nav-wrap').css('height', height);
+        });
+
+        $('#main-nav-wrap li a').click(function(){
+            $('body').css('overflow','');
+        });
+        // }
+    });
+    function touchMove(){
+        $('#main-nav-wrap').css('overflow','auto');
+    }
+    
+     function playGame() {
+        if($(window).width() > 768) {
+            window.location.href="computerGame.html";
+            return false;
+        }
+        window.location.href="http://game.shangjinzy.com";
+    }
+</script>
+
+
+<!-- header================================================== -->
+<header class="">
+    <div class="row">
+        <div class="logo">
+            <a href="index.html">赏金战役</a>
+        </div>
+
+        <nav id="main-nav-wrap" ontouchmove="touchMove()">
+            <ul id="nav-ul" class="main-navigation mobile">
+                <li class="current">
+                    <a href="#intro" title=""><b>主页</b></a></li>
+                <li><a href="market/market.html" title=""><b>交易中心</b></a></li>
+                <li><a href="game/Farm.html" title=""><b>游戏介绍</b></a></li>
+                <li><a href="new.html" title=""><b>游戏公告</b></a></li>
+                <li><a href="#faq" title=""><b>帮助中心</b></a></li>
+                <li><a href="about/aboutus.html" title=""><b>关于我们</b></a></li>
+                <li><a href="#cta" title=""><b>下载游戏</b></a></li>
+                <li class="highlight with-sep"><a href="person.html" title=""><b>注册/登录</b></a></li>
+            </ul>
+        </nav>
+
+        <a id="menu-a" class="menu-toggle" href="#"><span>菜单</span></a>
+
+    </div>
+
+
+</header>
+
+<!-- intro section================================================== -->
+<section id="intro">
+
+    <div class="shadow-overlay"></div>
+
+    <div class="intro-content">
+        <div class="row">
+
+            <div class='video-link'>
+                <a href="#video-popup">
+                    <img src="images/play-button.png" onclick="watchBtn()"></a>
+            </div>
+
+            <h5>欢迎来到赏金战役</h5>
+            <h1>《赏金战役》公测开启！</h1>
+
+            <!--<a class="button stroke smoothscroll" href="#process" >来看看吧</a>
+            <a class="button stroke smoothscroll" href="http://118.31.76.161/" title="">直接开玩</a>-->
+
+            <style>
+
+            </style>
+
+            <div id="stroke-div">
+            <a class="stroke watch-stroke" href="market/market.html" onmouseover="mouseHover(1)" onmouseout="mouseOut(1)">
+                <img src="images/watch.png" style="width:260px;height: 90px"></a>
+            <a class="stroke game-stroke" href="#" onmouseover="mouseHover(2)" onmouseout="mouseOut(2)"  onclick="playGame()">
+                <img src="images/game.png" style="width:260px;height: 90px"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Popup========================================================= -->
+    <div id="video-popup" class="popup-modal mfp-hide">
+
+        <div class="fluid-video-wrapper">
+            <video id="v1" src="images/video/game.mp4" width="100%" controls="controls">
+                您的浏览器不支持 video 标签。
+            </video>
+            <!-- <iframe src="images/video.mp4" width="800" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+        </div>
+    </div>
+</section> <!-- /intro -->
+
+<!-- Process Section================================================== -->
+<section id="process">
+
+    <div class="row section-intro">
+        <div class="col-twelve with-bottom-line">
+
+            <h5>背景游戏</h5>
+            <h1>它是什么？</h1>
+
+            <p class="lead">赏金战役是一款H5的养成策略类游戏</p>
+
+        </div>
+    </div>
+
+    <div class="row process-content">
+
+        <div class="left-side">
+
+            <div class="item" data-item="1">
+
+                <h5>起源</h5>
+
+                <p>未来的一天<br>
+                    陨星袭来<br>
+                    那天后<br>
+                    仿佛所有的钢铁制品一夜之间<br>
+                    都有了灵性<br>
+                    人称铁民<br>
+                </p>
+
+            </div>
+
+            <div class="item" data-item="2">
+
+                <h5>混乱</h5>
+
+                <p>时局已经混乱<br>
+                    严重影响了人类制定好的秩序<br>
+                    为了恢复平静<br>
+                    人类领袖呼吁和平解决内部矛盾<br>
+                    通过军备竞赛来夺取老大的位置<br>
+                    定名为赏金战役<br>
+                    力量薄弱的兵团不断壮大<br>
+
+                    领袖们分工筹谋发展<br>
+                    唯有狂信徒还游走在世界各地<br>
+                    无心承担自己的职责<br>
+                </p>
+            </div>
+
+        </div> <!-- /left-side -->
+
+        <div class="right-side">
+
+            <div class="item" data-item="3">
+
+                <h5>发展</h5>
+
+                <p>在贪婪的人类面前<br>
+                    狂信徒幡然醒悟<br>
+                    将所有力量合集<br>
+                    组成为一个强大的战士<br>
+                    所向无敌<br></p>
+
+            </div>
+
+            <div class="item" data-item="4">
+
+                <h5>征召</h5>
+                <p>流淌着铁民的血<br>
+                    灵魂却游走在世界的你<br>
+                    终会在这天发现自己的职责<br>
+                    化身为指挥官<br>
+                    带领兵团<br>
+                    把自己的信念与使命<br>
+                    传递给每一位士兵<br>
+                    共同朝着人类与铁民共处的新时代一起努力！<br>
+                    兵团在等你，所以请扛起你的责任，前进吧，指挥官阁下！<br></p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+
+        </div> <!-- /right-side -->
+
+        <div class="image-part"></div>
+
+    </div> <!-- /process-content -->
+
+</section> <!-- /process-->
+
+
+<!-- features Section
+================================================== -->
+<section id="features">
+
+    <div class="row section-intro">
+        <div class="col-twelve with-bottom-line">
+
+            <h5>游戏介绍</h5>
+            <h1>我们会帮助你找寻到你的位置</h1>
+
+            <p class="lead">《赏金战役》是一个多元的世界，在游戏中你需要给自己一个定位，因为，那样您的乐趣可能会更多</p>
+
+        </div>
+    </div>
+
+    <div class="row features-content">
+
+        <div class="features-list block-1-3 block-s-1-2 block-tab-full group">
+
+            <div class="bgrid feature">
+
+                <a href="game/guide.html" style="color:#fff"><span class="icon"><img src="images/1.png" width="90"></span></a>
+
+                <div class="service-content">
+                    <a href="game/guide.html"><h3 class="h05">新手指南</h3></a>
+                    <p style="color: black;">快速了解游戏进程及游戏规则可以快速的帮你了解游戏内容，并作出判断</p>
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <a href="game/Farm.html" style="color:#fff"><span class="icon"><img src="images/2.png" width="90"></span></a>
+
+                <div class="service-content">
+
+                    <a href="game/Farm.html"><h3 class="h05">游戏介绍</h3></a>
+                    <p style="color: black;">你将成为一个兵工基地指挥官，完成士兵由兵种研发、训练、集结组成强大兵团的过 程。
+                        当兵营研发的士兵数量过多时，你可以通过交易市场出售多余的士兵换取游戏金 币。
+                        也可以购买自己所需的士兵，扩充自己的领地。</p>
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <a href="game/Farm.html" style="color:#fff"><span class="icon"><img src="images/3.png" width="90"></span></a>
+
+                <div class="service-content">
+                    <a href=""><h3 class="h05">投机者</h3> </a>
+
+                    <p style="color: black;">如果你善于经商，是一个金融奇才，那么恭喜你，你将成为市场的主宰者，如同股神巴菲特一般的人物。
+                        因为你可以通过低卖高售未来科技战士，获得大量差价。也许你只是一个商场小白，说不定通过这个游戏觉醒你的商业天赋，
+                        从此在商海中无往而不利，成为商业巨头。</p>
+
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <a href="game/Farm.html" style="color:#fff"><span class="icon"><img src="images/4.png" width="90"></span></a>
+
+                <div class="service-content">
+                    <a href=""><h3 class="h05">攻略制造者</h3></a>
+
+                    <p style="color: black;">我们为游戏大能准备了这个位置，不是每个人都能对游戏快速上手的。所以，你才是《赏金战役》的NPC。</p>
+
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <a href="game/Farm.html" style="color:#fff"><span class="icon"><img src="images/5.png" width="90"></span></a>
+
+                <div class="service-content">
+                    <a href=""><h3 class="h05">《赏金战役》领导人</h3></a>
+
+                    <p style="color: black;">作为一个救世英雄，孤独是令人难过的。考虑到这一点，我们贴心的帮你准备了一个可喜的功能，
+                        你可以邀请你的朋友一起在赏金战役的世界中快意恩仇，一起奋斗。为了宣扬你们的朋友之义，
+                        我们还为你提供了丰厚的情义礼包，里面有珍贵的游戏道具，你和你的朋友都会获得。所以在自己游戏开心的同时，
+                        别忘了拉你的朋友一起来嗨。</p>
+
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <a href="game/Farm.html" style="color:#fff">	<span class="icon"><img src="images/3.png" width="90"></span>
+
+                </a><div class="service-content"><a href="game/Farm.html" style="color:#fff">
+            </a><a href=""><h3 class="h05">这是你身份，你自己书写</h3></a>
+
+                <p style="color: black;">当世界崩塌，病毒、灾害、能源枯竭等问题侵袭人类，作为一方之主，你是偏安一隅、苟且偷生，还是挺身而出、泽被苍生，为大家的安全不懈努力。</p>
+
+
+            </div>
+
+            </div> <!-- /bgrid -->
+
+
+
+        </div> <!-- features-list -->
+
+    </div> <!-- features-content -->
+
+</section> <!-- /features -->
+
+
+<!-- pricing
+================================================== -->
+
+<!--<section id="pricing">
+
+   <div class="row section-intro">
+   		<div class="col-twelve with-bottom-line">
+
+   			<h5>游戏公告</h5>
+   			<h1>我们为你准备了最好的礼包</h1>
+
+   			<p class="lead"></p>
+  	</div>
+   	</div>
+<div class="row pricing-content">
+
+         <div class="pricing-tables block-1-4 group">
+
+        <div class="bgrid">
+
+            	<div class="price-block primary">
+
+            		<div class="top-part" data-info="recommended">
+
+	            		<h3 class="plan-title">新手礼包</h3>
+		               <p class="price-month">Per month</p>
+		               <p class="price-meta">Billed Annually.</p>
+	            	</div>
+	               <div class="bottom-part">
+
+	            		<ul class="features">
+		                  <li><strong>3GB</strong> Storage</li>
+		                  <li><strong>10GB</strong> Bandwidth</li>
+		                  <li><strong>5</strong> Databases</li>
+		                  <li><strong>30</strong> Email Accounts</li>
+		               </ul>
+
+		               <a class="button large" href="">Get Started</a>
+
+	            	</div>
+
+            	</div>
+
+			   </div> <!-- /price-block -->
+
+<!--       <div class="bgrid">
+
+              <div class="price-block">
+
+                  <div class="top-part" >
+
+                      <h3 class="plan-title">预热礼包</h3>
+
+                     <p class="price-month">Per month</p>
+                          <p class="price-meta">Billed Annually.</p>
+
+                  </div>
+
+                 <div class="bottom-part">
+
+                      <ul class="features">
+                        <li><strong>5GB</strong> Storage</li>
+                        <li><strong>15GB</strong> Bandwidth</li>
+                        <li><strong>7</strong> Databases</li>
+                        <li><strong>40</strong> Email Accounts</li>
+                     </ul>
+
+                     <a class="button large" href="">Get Started</a>
+
+                  </div>
+
+              </div>
+
+            </div> <!-- /price-block -->
+<!--	 <div class="bgrid">
+
+           <div class="price-block">
+
+               <div class="top-part" >
+
+                   <h3 class="plan-title">预热礼包</h3>
+
+                  <p class="price-month">Per month</p>
+                       <p class="price-meta">Billed Annually.</p>
+
+               </div>
+
+              <div class="bottom-part">
+
+                   <ul class="features">
+                     <li><strong>5GB</strong> Storage</li>
+                     <li><strong>15GB</strong> Bandwidth</li>
+                     <li><strong>7</strong> Databases</li>
+                     <li><strong>40</strong> Email Accounts</li>
+                  </ul>
+
+                  <a class="button large" href="">Get Started</a>
+
+               </div>
+
+           </div>
+
+         </div> <!-- /price-block -->
+
+<!-- <div class="bgrid">
+
+            <div class="price-block">
+
+                <div class="top-part" >
+
+                    <h3 class="plan-title">预热礼包</h3>
+
+                   <p class="price-month">Per month</p>
+                        <p class="price-meta">Billed Annually.</p>
+
+                </div>
+
+               <div class="bottom-part">
+
+                    <ul class="features">
+                      <li><strong>5GB</strong> Storage</li>
+                      <li><strong>15GB</strong> Bandwidth</li>
+                      <li><strong>7</strong> Databases</li>
+                      <li><strong>40</strong> Email Accounts</li>
+                   </ul>
+
+                   <a class="button large" href="">Get Started</a>
+
+                </div>
+
+            </div>
+
+          </div> <!-- /price-block -->
+<!-- /pricing-tables -->
+
+<!-- /pricing-content -->
+
+<!-- /pricing -->
+<!-- Testimonials Section
+================================================== -->
+<section id="testimonials">
+
+    <div class="row">
+        <div class="col-twelve">
+            <h2 class="h01">新闻公告</h2>
+            <p class="lead">《赏金战役》的世界总能为你带来无限的惊喜，每当赏金战役发生大事，我们会就写在这里，就像一个里程碑一样。</p>
+
+        </div>
+    </div>
+
+    <div class="row flex-container">
+
+        <div id="testimonial-slider" class="flexslider">
+            <ul class="slides gonggao-ul" style="width: 800%; transition-duration: 0s; transform: translate3d(-315px, 0px, 0px);">
+		
+				<li class="clone" aria-hidden="true" style="width: 315px; float: left; display: block;">
+                    <div class="testimonial-author">
+                        <!--<img alt="Author image" draggable="false">-->
+                        <div class="author-info">
+                            	国庆中秋玩赏金有好礼相送
+                            <span>2017-09-30</span>
+                        </div>
+                    </div>
+
+                    <p>
+                        <a href="new.html">
+                        	当国庆碰上中秋，举国同庆。《赏金战役》回馈玩家感恩献礼，推出节日系列优惠活动。</a>
+                    </p>
+                </li>
+				
+                <li class="clone" aria-hidden="true" style="width: 315px; float: left; display: block;">
+                    <div class="testimonial-author">
+                        <!--<img alt="Author image" draggable="false">-->
+                        <div class="author-info">
+                            	《赏金战役》即将参展第二届CESE中国（苏州）电子竞技博览会
+                            <span>2017-09-23</span>
+                        </div>
+                    </div>
+
+                    <p>
+                        <a href="new.html">
+                        	《赏金战役》即将参展第二届CESE中国（苏州）电子竞技博览会，开启内测大幕，欢迎广大玩家移驾展台了解更多游戏详情。</a>
+                    </p>
+                </li>
+
+                <li class="flex-active-slide" style="width: 315px; float: left; display: block;">
+                    <div class="testimonial-author">
+                        <!--<img  alt="Author image">-->
+                        <div class="author-info">
+                            	《赏金战役》线下预热活动
+                            <span>2017-8-5</span>
+                        </div>
+                    </div>
+
+                    <p>
+                        <a href="new.html">炎炎夏日，凉凉冷风，让我们在这个酷暑的周末相约昆山科博馆，一起看动漫。
+                          	  届时，昆山天奇盛世网络科技有限公司新游《赏金战役》开展公测预热活动，欢迎广大玩家关注。</a>
+                    </p>
+
+                </li> <!-- /slide -->
+            </ul>
+        </div>
+        <ol class="flex-control-nav flex-control-paging">
+            <li><a class="flex-active">1</a></li>
+            <li><a class="">2</a></li></ol><ul class="flex-direction-nav">
+        <li class="flex-nav-prev"><a class="flex-prev" href="#">Previous</a>
+        </li><li class="flex-nav-next"><a class="flex-next" href="#">Next</a>
+    </li></ul></div> <!-- /testimonial-slider -->
+
+    </div> <!-- /flex-container -->
+
+    <!--提示框-->
+    <!-- <div class="bg qiyong" id='capacity' style="display:block;z-index:99">
+        <div class="tishi-con rel" style="padding-top:20px;">
+            <div class="tishi-text2" id="msg" style="padding-bottom:10px;">
+            </div>
+        </div>
+    </div> -->
+
+</section> <!-- /testimonials -->
+<script type="text/javascript">
+    $('').removeClass('');
+    var toggleButton = $('.menu-toggle');
+    if (toggleButton.is(':visible')) {
+        $('.watch-stroke,.game-stroke').attr('onmouseover', '');
+        $('.watch-stroke,.game-stroke').attr('onmouseout', '');
+    }else{
+        $('.watch-stroke').attr('onmouseover', 'mouseHover(1)');
+        $('.watch-stroke').attr('onmouseout', 'mouseOut(1)');
+        $('.game-stroke').attr('onmouseover', 'mouseHover(2)');
+        $('.game-stroke').attr('onmouseout', 'mouseOut(2)');
+    }
+    function mouseHover(type) {
+        if(type == 1) {
+            $('.watch-stroke img').attr('src', 'images/watch2.png');
+        }else{
+            $('.game-stroke img').attr('src', 'images/game2.png');
+        }
+    }
+    function mouseOut(type) {
+        if(type == 1) {
+            $('.watch-stroke img').attr('src', 'images/watch.png');
+        }else{
+            $('.game-stroke img').attr('src', 'images/game.png');
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $('.gonggao-ul a').click(function() {
+            $('#gonggao-content').show();
+            $('body').attr('style', 'overflow:hidden;background:url(./images/graybg-68.png)');
+        });
+    });
+</script>
+<!-- faq
+================================================== -->
+<section id="faq">
+
+    <div class="row section-intro">
+        <div class="col-twelve with-bottom-line">
+
+            <h5>常见问题</h5>
+            <h1>你的问题与解答</h1>
+
+            <p class="lead">《赏金战役》世界的编码工作还在继续，这个世界正在更趋于完整与完美，如果在这个世界的旅程中，遇到问题，请务必联系我们。</p>
+
+        </div>
+    </div>
+
+    <div class="row faq-content">
+
+        <div class="q-and-a block-1-2 block-tab-full group">
+
+            <div class="bgrid">
+
+                <h3>注册后的赏金战役账号和身份信息可以进行修改吗？</h3>
+
+                <p>您好，赏金战役账号和身份信息一经注册是不允许修改的。所以在实名认证时，请认真填写身份证信息，确认正确后再提交认证。</p>
+
+
+            </div>
+
+            <div class="bgrid">
+
+                <h3>忘记登录密码和修改登录密码？</h3>
+
+                <p>登录密码可以通过手机验证码方式找回，修改密码通过用户中心的安全设置修改。</p>
+            </div>
+
+
+            <div class="bgrid">
+
+                <h3>绑定手机时怎么收不到短信验证码？</h3>
+
+                <p>您好，请先查看您手机是否欠费或者不在服务区内；如果您使用了手机管家等软件时，请留意是否被相关软件错误拦截，造成您无法正常接收短信；另外请不要频繁点击发送验证码。</p>
+
+            </div>
+
+            <div class="bgrid">
+
+                <h3>赏金战役如何赚取金币？</h3>
+
+                <p>兵营研发集结的士兵，可以送到交易市场中出售换取金币</p>
+
+
+            </div>
+
+            <div class="bgrid">
+
+                <h3>赏金战役兵营和基地升级怎么操作？</h3>
+
+                <p>点击兵营或基地，看到升级按钮，满足条件后点击升级即可</p>
+
+
+            </div>
+
+            <div class="bgrid">
+
+                <h3>赏金战役怎么获取兵营？</h3>
+
+                <p>初始会赠送一个初级兵营，后基地每次升级都将获得一个初级兵营</p>
+
+            </div>
+
+        </div> <!-- /q-and-a -->
+
+    </div> <!-- /faq-content -->
+
+    <!-- 	<div class="row section-ads">
+
+             <div class="col-twelve">
+
+                   <div class="ad-content">
+
+                       <h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+
+                    <p class="lead">
+                    Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+                      Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
+                      <!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->
+
+    <!--</p>
+
+    <div class="action">
+     <a class="button large round" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+    </div>
+
+ </div>
+
+</div>
+
+</div> <!-- /section-ads -->
+
+
+</section> <!-- /faq -->
+
+<!-- cta================================================== -->
+<section id="cta">
+
+    <div class="row cta-content">
+
+        <div class="col-twelve">
+
+            <h1 class="h01">《赏金战役》游戏客户端下载</h1>
+
+            <p class="lead">如果你准备好了，根据你的设备，做出选择，点击下方按钮下载吧</p>
+
+            <ul class="stores">
+                <li class="app-store">
+                    <a href="https://www.pgyer.com/sjzyAPP" class="button round large" title="">
+                        <i class="icon ion-social-apple"></i>Apple</a>
+                </li>
+                <li class="play-store">
+                    <a href="https://www.pgyer.com/sjzy" class="button round large" title="">
+                        <i class="icon ion-social-android"></i>Android</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div> <!-- /cta-content -->
+
+</section> <!-- /cta -->
+
+<!-- footer================================================== -->
+<script src="js/foot.js"></script><footer>
+    <a href="home/new/detail/9155.html"></a>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+</html>

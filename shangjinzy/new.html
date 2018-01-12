@@ -1,0 +1,342 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-公告页</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="js/main2.js"></script>
+    <script src="js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="images/favicon.png">
+    
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content-div{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(./images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    </style>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="index.html" class="logo"></a>
+
+
+            <div class="link clear">
+                <a href="./index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+
+            </div>
+
+        </div>
+    </div>
+    
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏公告</h1>
+            <h2>Game Data</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["./images/banner-farm01.png", "./images/banner-farm01.png"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+ 
+    <div class="container clear">
+        <div class="side tool-nav-bar">
+            <dl class="sidemenu">
+                <dt>游戏公告</dt>
+
+                <dd id="one" class=select>通知公告</dd>
+            </dl>
+
+        </div>
+        <div class="main">
+            <div class="tool-content-div one" style="display:block">
+                <div class="main-head">
+                    通知公告
+                </div>
+
+                <ul class="newslist">
+                	<li>
+                        <div class="newslist-item-head"><a href="home/new/detail/10232.html" style="color:dimgrey; ">
+                            <b>活动3：赏金战役喜迎公测</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-10-23</span>
+                        </div>
+                        <div class="newslist-item-text">
+                          《赏金战役》为了感谢各玩家内测以来对游戏的支持与厚爱，官方特此开放赏金公测月榜活动。高额金币奖励，更有实物大奖，让玩家体验游戏推广的乐趣。</div>
+                   </li>
+                	<li>
+                        <div class="newslist-item-head"><a href="home/new/detail/1023.html" style="color:dimgrey; ">
+                            <b>活动2：赏金战役喜迎公测</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-10-23</span>
+                        </div>
+                        <div class="newslist-item-text">
+                          《赏金战役》为了感谢各玩家内测以来对游戏的支持与厚爱， 官方特此开放赏金公测7天榜活动。高额金币奖励，更有实物大奖，让玩家体验游戏推广的乐趣。</div>
+                   </li>
+                   
+                	<li>
+                        <div class="newslist-item-head"><a href="home/new/detail/1021.html" style="color:dimgrey; ">
+                            <b>活动1：暂时降低升基地7级及水火营所需材料</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-10-21</span>
+                        </div>
+                        <div class="newslist-item-text">
+                          赏金战役公测在即，为了回馈广大老会员们的支持，经运营团队商讨决定，暂时降低升基地7级及水火兵营所需材料；</div>
+                   </li>
+                   
+                    <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/1011.html" style="color:dimgrey; ">
+                            <b>赏金公测，有你做伴</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-10-11</span>
+                        </div>
+                        <div class="newslist-item-text">
+                          不知不觉中，赏金战役已经陪伴了大家半个月的时光，也正是有大家的陪伴，我们才能迈步向前；这段时间里随着时间的临近，也即将进入公测阶段。赏金战役的公测活动也即将拉开序幕！</div>
+                   </li>
+
+                    <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/1008.html" style="color:dimgrey; ">
+                            <b>《赏金大回馈》100000金币内测会员齐分享！</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-10-08</span>
+                        </div>
+                        <div class="newslist-item-text">
+                          赏金战役从内测至今已悄然陪伴了大家14个日夜，游戏内测的火爆程度直接拉近了会员与会员之间的热情。<br />
+                  此期间首先感谢广大会员们的支持与陪伴，有你们的存在我们才能做的更好，特此赏金战役运营团队经商讨决定，
+                        为了回馈广大会员们在内测期间的热情支持，100000金币回馈活动孕育而生，
+                        </div>
+                   </li>
+
+                    <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/1006.html" style="color:dimgrey; ">
+                            <b>关于某些士兵兑换轮特尔的活动即将开放通知</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-10-06</span>
+                        </div>
+                        <div class="newslist-item-text">
+                            自从假日期间推出轮特尔士兵的活动得到了广大会员的认可，现提前通知所有参与内测的会员，公司将在10号上午某整点开启某些士兵兑换轮特尔的活动，大家千万不要错过哦！！
+                        </div>
+                   </li>
+
+                    <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/0930.html" style="color:dimgrey; ">
+                            <b>国庆中秋玩赏金有好礼相送</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-09-30</span>
+                        </div>
+                        <div class="newslist-item-text">
+                            当国庆碰上中秋，史上最长假期没有忧愁。《赏金战役》回馈玩家感恩献礼，推出节日系列优惠活动。
+                        </div>
+                   </li>
+                    
+                    <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/0929.html" style="color:dimgrey; ">
+                            <b>关于禁止私下交易的通知</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-09-29</span>
+                        </div>
+                        <div class="newslist-item-text">
+                          为了游戏的平衡持续性发展，同时为了保障用户的权益，即日起将禁止用户通过私下交易，一经发现将予以出售、购买双方封号处理。
+                        </div>
+                   </li>
+                    
+                    <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/0928.html" style="color:dimgrey; ">
+                            <b>关于降低好友赠送手续费的通知</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-09-28</span>
+                        </div>
+                        <div class="newslist-item-text">
+                           因收到过多玩家反映交易手续费过高，从而导致过多线下交易，已有部分会员线下交易权益受损，现经公司商讨决定将原先交易手续费10%下调至4%。
+                        </div>
+                   </li>
+
+                    <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/0924.html" style="color:dimgrey; ">
+                            <b>《赏金战役》不删档内测正式开启公告</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-09-23</span>
+                        </div>
+                        <div class="newslist-item-text">
+                           《赏金战役》的指挥官们，您的基地现已为您打造完成，新的征程即将在9月24号开启，您准备好了吗？
+                        </div>
+                   </li>
+               
+               
+                     <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/0923.html" style="color:dimgrey; "><b>《赏金战役》即将参展第二届CESE中国（苏州）电子竞技博览会</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-09-23</span>
+                        </div>
+                        <div class="newslist-item-text">
+                          《赏金战役》即将参展第二届CESE中国（苏州）电子竞技博览会，开启内测大幕，欢迎广大玩家移驾展台了解更多游戏详情。
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/9151.html" style="color:dimgrey; "><b>好消息！开团礼包数量增加</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-08-06</span>
+                        </div>
+                        <div class="newslist-item-text">
+                            全体亲爱的指挥官：体验史上最好玩的养成策略游戏，享受互联网+模式带来的新乐趣！ 由于经过8月5号-6号的线下活动预热，原定的500个开团大礼包被热情的指挥官们抢占一空，经运营团队慎重考虑，鉴于大家如此高的热情，现将开团礼包数量增加至2000个，没有预约抢到的指挥官们速来抢占。
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="newslist-item-head" ><a href="home/new/detail/9152.html" style="color:dimgrey; "><b>《赏金战役》受邀参加昆山2017 OMY动漫游戏文化节</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-07-31</span>
+                        </div>
+                        <div class="newslist-item-text">
+                            2017ChinaJoy刚刚落下帷幕，不少小伙伴都说“今年都是电竞”。 有媒体人说电竞已经成为越来越多游戏厂商接下来一段时间的发展方向， 未来则可能有游戏公司致力于开发出一款适合电竞的游戏，并试图以此为生。
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="newslist-item-head"><a href="home/new/detail/9154.html"  style="color:dimgrey; "><b>《赏金战役》不删档内测即将开启</b></a></div>
+                        <div class="newslist-item-info">
+                            <span>来源：《赏金战役》运营团队</span>
+                            <span>日期：2017-06-18</span>
+                        </div>
+                        <div class="newslist-item-text">
+                            亲爱的指挥官：
+                            一款史上最好玩的养成策略游戏，告别传统游戏模式，打开了游戏行业全新大门，欢迎体验！9月起，
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+<script type="text/javascript">
+$(window).resize(function () {
+    $('.tool-img').removeClass('w100');
+    $('.table-cainiao img').removeClass('w50');
+    if ($(window).width() < 768) {
+        $('.tool-img').addClass('w100');
+        $('.table-cainiao img').addClass('w50');
+    }
+});
+$(function(){
+    // $(".tool-content-div").hide();
+    // $('.tool-content-div.one').show();
+    $('.tool-img').removeClass('tool-img-style');
+    $('.table-cainiao img').removeClass('w50');
+    var id = 'one';
+    $(".tool-nav-bar").on('click', 'dd', function(event) {
+        event.preventDefault();
+        $(this).addClass('select').siblings().removeClass('select');
+        $(".tool-content-div").hide();
+
+        id = $(this).attr('id');
+        $(".tool-content-div."+id).show();
+
+        if ($(window).width() < 768) {
+            $('.tool-img').addClass('w100');
+            $('.table-cainiao img').addClass('w50');
+        }
+    });
+});
+</script>
+
+    <script src="js/foot.js"></script>
+
+    <!-- <div class="qrcodesj"></div>
+    <div class="downdiv">
+        <a href="javascript:void(0)" target="_blank">下载赏金战役</a>
+    </div> -->
+</body>
+</html>

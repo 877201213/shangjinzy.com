@@ -1,0 +1,228 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-加入我们</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/utilities.js"></script>
+
+    <script src="../js/main2.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../images/favicon.png">
+    
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(./images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    </style>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../index.html" class="logo"></a>
+            <div class="link clear">
+                <a href="../index.html">返回主页</a>
+                    <a href="javascript:history.go(-1)">返回上一级</a>
+            </div>
+
+        </div>
+    </div>
+    
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+           
+            <h1>关于我们</h1>
+            <h2>About Us</h2>
+        
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../images/features-bg2.jpg", "../images/features-bg2.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+ 
+    <div class="container clear">
+        <div class="side tool-nav-bar">
+            <dl class="sidemenu">
+                <dt>关于我们 </dt>
+                <dd><a href="aboutus.html">公司介绍</a></dd>
+                <dd><a href="chatus.html">联系我们</a></dd>
+                <dd class=select>加入我们</dd>
+                <dd><a href="User Agreement.html">用户协议</a></dd>
+            </dl>
+
+        </div>
+        <div class="main">
+            <div class="tool-content three" style="display:block">
+                <div class="main-head">
+                    加入我们
+                </div>
+
+
+                <ul class="newslist">
+
+
+                    <li>
+                        <div class="newslist-item-head" >
+                            <h3 style="text-align: center; color: gray">游戏前言<br /><br /></h3>
+                            <p style=" font-size: 17px;">
+                            当经济下行，辉煌的4A也难免收缩关闭的时候，<br>
+                            我们却颠覆游戏界的传统模式，创造了这款史上最好玩的养成策略游戏，<br>
+                            只为与众多玩家逆市共赢！<br>
+                            为了实现我们的梦想，更为游戏能够更好地发行推广，现公司需要招募以下精英：<br>
+                        </p>
+                        </p>
+                        </div>
+                        <div class="newslist-item-head" >
+                            <h3 style="text-align: center; color: orange">游戏运营总监<br /><br /></h3>
+                            <p style=" font-size: 15px;font-family: 宋体;">
+
+                                岗位职责：<br />
+                                1.负责公司自主研发的游戏总体运营工作<br />
+                                2. 建立和领导产品运营团队，对用户转化率、活跃度、付费率和arpu值负责；<br />
+                                3. 根据运营数据的分析，提出产品后续开发和修改建议；<br />
+                                4. 制定游戏的活动计划并执行；<br />
+                                5、制定产品上线的运营计划并执行；<br />
+                                6、制定游戏产品收费策略、支付渠道策略，并针对市场的变化制定和调整后续运营计划。<br />
+                                7、按照流程和规则，对所负责项目进行数据采集，分析；<br />
+                                8、对所负责项目和项目主要竞争对手的实时监控跟踪，并及时与相关部门沟通；<br />
+                                9、负责与各相关部门信息沟通、事务协调工作，并及时备案。<br /><br />
+
+                                任职要求：<br />
+                                1、 本科及以上学历；<br />
+                                2、 3年以上游戏相关行业从业经验，有大型手游运营或部门管理经验者优先；<br />
+                                3、 热爱游戏、互联网行业，具备丰富的手游联合运营经验；<br />
+                                4、 对数据敏感，具备较强的数据分析能力；<br />
+                                5、 具备良好的沟通协调能力、超强的执行力，以及清晰的逻辑思维分析能力；<br />
+                                6、 具备开放性思维和接受新领域、变革的意识；<br />
+                                7、 能力优越者，可放宽学历要求。<br />
+                            </p>
+                            <br /><br /><br />
+                            <h3 style="text-align: center; color: orange">新媒体运营<br /><br /></h3>
+                            <p style="font-size: 15px;font-family: 宋体">
+                            	岗位职责：<br />
+                                1、负责微信公众号的日常运营工作，包括内容搜集、整理、编辑及发布；根据公众号的媒体属性发布各种符合要求的优质、有传播性的内容；<br />
+                                2、增加微信公众账号订阅用户数量，提高用户活跃度，与用户做好互动，对用户的网络行为进行分析与总结；<br />
+                                3、挖掘和分析微信用户需求，收集用户反馈，分析用户行为及需求，即时掌握当下热门话题；<br />
+                                4、及时关注微信发展趋势，深入了解微信特点及资源，广泛关注标杆性公众号，探索微信运营模式。<br /><br />
+                                 任职要求：<br />
+                                1、有微博、微信或app推广方面工作经验者优先；<br />
+                                2、爱玩微博、微信等新媒体交流工具；<br />
+                                3、具备基础的内容编辑工作经验，包括文字、页面及图片美化者优先；<br />
+                                4、有较强的数据分析能力，有优秀的文案写作能力，图片编辑能力，优秀的信息采编整合能力，能够发掘移动互联网传播新渠道者优先。<br />
+                            </p>
+
+
+                            <br /><br /><br />
+                            <h3 style="text-align: center; color: orange">网络推广<br /><br /></h3>
+                            <p style=" font-size: 15px;font-family: 宋体">
+                            	岗位职责：<br />
+                            	1、利用互联网资源，网络营销，问答、博客、 论坛、社区、微博、微信等方式做网络推广；<br />
+                                2、负责搜索引擎优化，软文撰写、百度知道、社区等互动平台推广；<br />
+                                3、执行上级指定的量化任务指标，不断总结推广经验，改进推广效果，提升网站搜索引擎收录；<br />
+                                4、根据公司战略发展要求，通过各种数据分析及数据挖掘手段，制定整站SEO优化方案，监督执行和效果检查； <br />
+                                5、制定整站关键词解决方案，监控网站关键字，监控和研究其他网站相关做法，并围绕优化提出合理的网站调整建议； <br />
+                                6、通过第三方平台或网站进行流量、数据或服务交换，或战略合作联盟，增加网站的流量； <br />
+                                7、有效地推动其他部门的配合，完成网站的SEO工作； <br />
+                                8、能够实时跟进搜索引擎的变化方向。<br /><br />
+                                任职资格 <br />
+                                1、1-2年网络营销推广经验，对互联网有深入的了解；<br />
+                                2、了解操作系统，熟悉google、百度等各大搜索引擎的原理、特点及其排名规则和规律；<br />
+                                3、熟悉SEO各类优化技术，精通网站内容优化，关键词优化，图片优化等优化技巧；<br />
+                                4、学习能力强，较好的沟通和协作能力，极强的执行力和沟通能力，具备良好的服务意识；<br />
+                                5、具有较强的执行、学习和团队精神，有一定的创新和策划能力。<br />
+                            </p>
+                        </div>
+                    </li>
+
+                    <li style="">
+                        你是黑马吗？你有才吗？你愿意高收入吗？那么欢迎你来挑战！<br>
+
+                        简历投递：tqssgame@163.com
+                    </li>
+                </ul>
+            </div>
+
+ 
+ </div>
+
+    <!-- <div class="qrcodesj"></div>
+    <div class="downdiv">
+        <a href="javascript:void(0)" target="_blank">下载赏金战役</a>
+    </div> -->
+    </div>
+
+        <script type="text/javascript" src="../js/foot2.js"></script>
+</body>
+</html>

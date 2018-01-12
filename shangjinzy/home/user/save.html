@@ -1,0 +1,256 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-用户中心-安全设置</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../css/animate.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/base.css" rel="stylesheet" />
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/jquery.backstretch.min.js"></script>
+    <script src="../../js/wow.min.js"></script>
+    <script src="../../js/main2.js"></script>
+    <script src="../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="../../images/favicon.png">
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../index.html" class="logo"></a>
+             <ul class="menu clear" id="menu">
+                <li><i class="icon">&#xe601;</i><a href="../../index.html">首页</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe609;</i><a href="#">交易中心</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe600;</i><a href="../../game/Farm.html">游戏介绍</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe608;</i><a href="../../new.html">游戏公告</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe60a;</i><a href="../../about/aboutus.html">关于我们</a><i class="icon arrow">&#xe603;</i></li>
+            </ul> 
+
+            <div class="link clear">
+                    <!-- <a href="">用户中心</a> -->
+                    <a href="#">退出</a>
+            </div>
+            <div class="switch" id="switch"><i></i></div>
+        </div>
+    </div>
+    
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>用户中心</h1>
+            <h2>User Center</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../images/features-bg.jpg", "../../images/features-bg.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+<div class="container clear">
+    <div class="side">
+        <ul id="side-menu-toggle" class="side-menu-toggle">
+
+    <li class=open>
+        <div class="link">用户中心</div>
+        <ul class="side-menu-toggle-sub side-menu-toggle-sub-show">
+            <li><a href="./index.html" >账户概要</a></li>
+            <li><a href="./save.html" class=select>安全设置</a></li>
+            
+            <li><a href="./deposit.html" >账户充值</a></li>
+            <li><a href="./withdraw.html" >金币提现</a></li>
+            
+            <li><a href="./financeDetail.html" >金币明细</a></li>
+        </ul>
+    </li>
+
+    <li >
+        <div class="link">拍卖行</div>
+        <ul class="side-menu-toggle-sub ">
+            
+            <li><a href="./entrust.html" >委托记录</a></li>
+            <li><a href="./tradeHistory.html" >交易记录</a></li>
+            
+            
+            
+            <li><a href="./give.html" >士兵赠送</a></li>
+            <li><a href="./giveHistory.html" >赠送记录</a></li>
+        </ul>
+    </li>
+
+
+    <li >
+        <div class="link">推广中心</div>
+        <ul class="side-menu-toggle-sub ">
+            <!-- <li><a href="./popLink.html" >推广链接</a></li> -->
+            <li><a href="./popDetail.html" >推广列表</a></li>
+            <li><a href="./popReward.html" >推广奖励</a></li>
+            <li><a href="./fillReferId.html" >补推广码</a></li>
+            <!--
+            <li><a href="/User/PopResources" >推广资料</a></li>
+            -->
+            <li><a href="./popContact.html" >联系资料</a></li>
+            <li><a href="./popTutor.html" >我的导师</a></li>
+        
+              <!--
+            <li><a href="/User/PopComplaintList" >投诉列表</a></li>
+            -->
+
+        </ul>
+    </li>
+
+
+</ul>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        var Toggle = function (el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+        }
+
+        Toggle.prototype.dropdown = function (e) {
+            var $el = e.data.el;
+            $this = $(this),
+			$next = $this.next();
+
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+
+            if (!e.data.multiple) {
+                $el.find('.side-menu-toggle-sub').not($next).slideUp().parent().removeClass('open');
+            };
+
+        }
+
+        var toggle = new Toggle($('#side-menu-toggle'), false);
+
+    });
+</script>
+
+    </div>
+
+    <div class="main">
+        <div class="uc-head uc-head-border">修改密码</div>
+        <div class="uc-safe clear">
+            <i class="icon color-3">&#xe617;</i>
+            <cite>
+                <p>登录/支付密码修改</p>
+                <p>定期修改密码有助于提高帐号安全！</p>
+            </cite>
+            <span>
+                <a href="./changePwd.html" class="button">修改登录密码</a>
+            </span> 
+            <span class="pr">
+                <a href="./setPayPwd.html" class="button">重置支付密码</a>
+            </span>
+        </div>
+
+        <div class="uc-head uc-head-border">绑定手机</div>
+        <div class="uc-safe clear">
+            <i class="icon color-4">&#xe618;</i>
+            <cite>
+                <p>您已绑定手机：189****1234</p>
+                <p>绑定手机可用于找回密码与提现等短信验证。</p>
+            </cite>
+            <span>
+                <a href="./verifyMobile.html" class="button">立即修改</a>
+            </span>
+        </div>
+
+        <div class="uc-head uc-head-border">实名认证</div>
+        <div class="uc-safe clear">
+            <i class="icon color-1">&#xe616;</i>
+                <cite>
+                    <p><b class="color-1">小明</b>，您已通过实名认证[C1]</p>
+                    <p>证件号码：420984************</p>
+                </cite>
+                <span>
+                    <a href="./certificated.html" class="button">查看认证</a>
+                </span>
+
+
+        </div>
+
+        <div class="uc-head uc-head-border">绑定提现账户</div>
+        <div class="uc-safe clear">
+            <i class="icon color-2">&#xe615;</i>
+
+                <cite>
+                    <p>您已绑定：中国工商银行 - 6227123409870000123</p>
+                    <p>您只可以绑定一个提现账户，可以是银行卡或者其他支付账号。</p>
+                </cite>
+                <span>
+                    <a href="./bindBankCard.html" class="button">管理账户</a>
+                </span>
+
+
+
+        </div>
+
+        <div class="uc-head uc-head-border">三方支付开关</div>
+        <div class="uc-safe clear">
+            <i class="icon color-2">&#xe62b;</i>
+
+                <cite>
+                    <p>当前状态：关闭</p>
+                    <p>关闭后三方接入程序不可以消耗士兵。</p>
+                </cite>
+                <span>
+                    <a href="./thirdSwitch.html" class="button">立即开启</a>
+                </span>
+        </div>
+
+        
+
+
+
+    </div>
+</div>
+
+<script type="text/javascript" src="../../js/foot1.js"></script>
+
+   
+</body>
+</html>

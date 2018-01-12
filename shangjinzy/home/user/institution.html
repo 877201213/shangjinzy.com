@@ -1,0 +1,234 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-用户中心-推广机构</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../css/animate.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/base.css" rel="stylesheet" />
+
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/jquery.backstretch.min.js"></script>
+    <script src="../../js/wow.min.js"></script>
+    <script src="../../js/main2.js"></script>
+    <script src="../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="../../images/favicon.png">
+    
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../index.html" class="logo"></a>
+             <ul class="menu clear" id="menu">
+                <li><i class="icon">&#xe601;</i><a href="../../index.html">首页</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe609;</i><a href="#">交易中心</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe600;</i><a href="../../game/Farm.html">游戏介绍</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe608;</i><a href="../../new.html">游戏公告</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe60a;</i><a href="../../about/aboutus.html">关于我们</a><i class="icon arrow">&#xe603;</i></li>
+            </ul> 
+
+            <div class="link clear">
+                    <!-- <a href="">用户中心</a> -->
+                    <a href="#">退出</a>
+            </div>
+            <div class="switch" id="switch"><i></i></div>
+        </div>
+    </div>
+    
+
+
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>用户中心</h1>
+            <h2>User Center</h2>
+        </div>
+    </div>
+</div>
+<script src="/News/Banner?Column=User" type="text/javascript"></script>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../images/features-bg.jpg","../../images/features-bg.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+
+<form action="/User/Institution" method="post">    <div class="container clear">
+        <div class="side">
+            <ul id="side-menu-toggle" class="side-menu-toggle">
+
+    <li class=open>
+        <div class="link">用户中心</div>
+        <ul class="side-menu-toggle-sub side-menu-toggle-sub-show">
+            <li><a href="./index.html" >账户概要</a></li>
+            <li><a href="./save.html" class=select>安全设置</a></li>
+            
+            <li><a href="./deposit.html" >账户充值</a></li>
+            <li><a href="./withdraw.html" >金币提现</a></li>
+            
+            <li><a href="./financeDetail.html" >金币明细</a></li>
+        </ul>
+    </li>
+
+    <li >
+        <div class="link">拍卖行</div>
+        <ul class="side-menu-toggle-sub ">
+            
+            <li><a href="./entrust.html" >委托记录</a></li>
+            <li><a href="./tradeHistory.html" >交易记录</a></li>
+            
+            
+            
+            <li><a href="./give.html" >士兵赠送</a></li>
+            <li><a href="./giveHistory.html" >赠送记录</a></li>
+        </ul>
+    </li>
+
+
+    <li >
+        <div class="link">推广中心</div>
+        <ul class="side-menu-toggle-sub ">
+            <!-- <li><a href="./popLink.html" >推广链接</a></li> -->
+            <li><a href="./popDetail.html" >推广列表</a></li>
+            <li><a href="./popReward.html" >推广奖励</a></li>
+            <li><a href="./fillReferId.html" >补推广码</a></li>
+            <!--
+            <li><a href="/User/PopResources" >推广资料</a></li>
+            -->
+            <li><a href="./popContact.html" >联系资料</a></li>
+            <li><a href="./popTutor.html" >我的导师</a></li>
+        
+              <!--
+            <li><a href="/User/PopComplaintList" >投诉列表</a></li>
+            -->
+
+        </ul>
+    </li>
+
+
+</ul>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        var Toggle = function (el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+        }
+
+        Toggle.prototype.dropdown = function (e) {
+            var $el = e.data.el;
+            $this = $(this),
+			$next = $this.next();
+
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+
+            if (!e.data.multiple) {
+                $el.find('.side-menu-toggle-sub').not($next).slideUp().parent().removeClass('open');
+            };
+
+        }
+
+        var toggle = new Toggle($('#side-menu-toggle'), false);
+
+    });
+</script>
+
+        </div>
+
+        <div class="main">
+
+            <div class="uc-head uc-head-border">机构账户</div>
+
+            <div class="uc-institution-link">
+                <a class="select" href="javascript:void(0)">机构介绍</a>
+                <a href="info/institutionPay.html">机构申请</a>
+                <a href="info/institutionDetail.html">团队列表</a>
+                <a href="info/institutionReward.html">奖励明细</a>
+            </div>
+            
+
+            <div class="uc-institution clear">
+                <cite class="icon">&#xe614;</cite>
+                <span>
+                    机构说明:<br />
+                    1. 机构账户可获得团队购买钻石金额2%奖励<br />
+                    2. 机构账户可获得团队在淘金果园购买种子或士兵产生的手续费4%奖励<br />
+                    3. 团队成员首次充值时，机构账户可获得1金币奖励（新增）<br />
+                    4. 机构账户可获得最新的游戏动态，并拥有专属的机构标识<br />
+                    5. 申请机构均需3个工作日审核<br />
+                    6. 加盟代理费20000金币<br />
+                </span>
+            </div>
+
+            
+            <div class="uc-form">
+                <div class="form-group">
+                    <input type="button" class="button button-color-1 button-stretch" value="我已经阅读机构申请协议并同意申请机构" onclick="window.location.href = '/User/InstitutionPay';" />
+                </div>
+            </div>
+           
+            <div class="message message-help">
+                <span class="color-1">机构申请协议:</span><br />
+                1.申请机构必须通过我公司相关资格审核<br />
+                2.机构账户仅允许工商登记注册的合法企业申请，不接受个人申请；<br />
+                3..企业申请机构必须提供.且保证相关证照及信息真实有效；<br />
+                4.机构用户申请机构账户中的操作行为视为企业真实有效授权行为，并视为接受操作所附风险（法律、财务等）和权益；<br />
+                5. 机构账户可获得团队购买钻石金额2%奖励, 机构账户可获得团队交易手续费4%奖励。<br />
+                6. 团队成员首次充值时，机构账户可获得1金币奖励。<br />
+                7. 机构账户可获得最新的游戏动态，并拥有专属机构标识。<br />
+                8. 申请机构账户的审核时间为3个工作日（节假日顺延）。<br />
+                9. 申请机构账户首次开户账户管理费用20000金币。<br />
+                10.	用户同意机构账户需完成每月100,000金币充值业绩，如连续3个月未完成业绩，次月将自动取消机构账户资格的规定。<br />
+                11.	被取消机构账户资格客户可联系我公司进行复议，并处理相关善后事宜。<br />
+                12.	公司享有对机构账户的最终解释权，并保留暂停、免除机构账户的权限。<br />
+            </div>
+
+        </div>
+    </div>
+</form>
+    <script type="text/javascript" src="../../js/foot1.js"></script>
+
+   
+</body>
+</html>

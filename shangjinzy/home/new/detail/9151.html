@@ -1,0 +1,158 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-指挥官</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../../../css/animate.css" rel="stylesheet" />
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <link href="../../../css/base.css" rel="stylesheet" />
+    <script src="../../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../../js/jquery.backstretch.min.js"></script>
+    <script src="../../../js/wow.min.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/main2.js"></script>
+    <script src="../../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../../../images/favicon.png">
+    
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content-div{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(../../../images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    </style>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../../index.html" class="logo"></a>
+
+
+            <div class="link clear">
+                <a href="../../../index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+
+            </div>
+
+        </div>
+    </div>
+    
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏公告</h1>
+            <h2>Game Data</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../../images/features-green.jpg", "../../../images/features-green.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+ 
+    <div class="container clear">
+        <div class="side tool-nav-bar">
+            <dl class="sidemenu">
+                <dt>游戏公告</dt>
+                <dd class=select><a href="../../../new.html">通知公告</a></dd>
+            </dl>
+
+        </div>
+        <div class="main">
+        <div class="newsitem">
+            <div class="newsitem-head">好消息！开团礼包数量增加</div>
+            <div class="newsitem-info">
+                <span>来源：《赏金战役》运营团队</span>
+                <span>日期：2017-08-08</span>
+            </div>
+            <div class="newsitem-text">
+            <p>全体亲爱的指挥官：</p>    
+            <p>体验好玩的养成策略游戏，享受其带来的乐趣！</p>    
+            <p>由于经过8月5号-6号的线下活动预热，原定的500个开团大礼包被热情的指挥官们抢占一空，经运营团队慎重考虑，鉴于大家如此高的热情，现将开团礼包数量增加至2000个，没有预约抢到的指挥官们速来抢占。</p>    
+            <p>抢占方式：</p>    
+            <p>关注“赏金战役”公众号（sjzygame），找到“玩法攻略”，进入“内测预约”</p>    
+            <p>抢占时间：</p>    
+            <p>8月6号---9月23号（待定）</p>
+            <br />
+            <p>另外，装备礼包数量不受限制，欢迎大家踊跃参加，多多提意见。</p>    
+            <p>《赏金战役》运营团队感谢你的参与。</p>  
+
+            </div>
+    </div>
+     		<input type="button" value="上一篇" width="30%" onclick="location.href='0923.html'" style="float: left; margin-right: 50px;text-overflow: ellipsis;">
+            <input type="button" value="下一篇" width="30%" onclick="location.href='9152.html'" style="float: right; margin-right: 50px;text-overflow: ellipsis;">
+        </div>
+
+    </div>
+            
+            
+            <script type="text/javascript" src="../../../js/foot3.js"></script>
+
+    <!-- <div class="qrcodesj"></div>
+    <div class="downdiv">
+        <a href="javascript:void(0)" target="_blank">下载赏金战役</a>
+    </div> -->
+</body>
+</html>

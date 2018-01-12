@@ -1,0 +1,195 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-指挥官</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../../../css/animate.css" rel="stylesheet" />
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <link href="../../../css/base.css" rel="stylesheet" />
+    <script src="../../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../../js/jquery.backstretch.min.js"></script>
+    <script src="../../../js/wow.min.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/main2.js"></script>
+    <script src="../../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../../../images/favicon.png">
+    
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content-div{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(../../../images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    </style>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../../index.html" class="logo"></a>
+
+
+            <div class="link clear">
+                <a href="../../../index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+            </div>
+
+        </div>
+    </div>
+    
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏公告</h1>
+            <h2>Game Data</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../../images/banner-farm02.png", "../../../images/banner-farm02.png"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+ 
+    <div class="container clear">
+        <div class="side tool-nav-bar">
+            <dl class="sidemenu">
+                <dt>游戏公告</dt>
+
+                <dd class=select><a href="../../../new.html">通知公告</a></dd>
+            </dl>
+
+        </div>
+        <div class="main">
+        <div class="newsitem">
+            <div class="newsitem-head">网络游戏未成年人家长监护工程介绍</div>
+            <div class="newsitem-info">
+                <span>来源：《赏金战役》运营团队</span>
+                <span>日期：2017-06-01</span>
+            </div>
+            <div class="newsitem-text">
+                           
+
+                "网络游戏未成年人家长监护工程"是一项由各大网络游戏企业共同发起并参与实施，由中华人民共和国文化部指导，旨在加强家长对未成年人参与网络游戏的监护，引导未成年人健康、绿色参与网络游戏，和谐家庭关系的社会性公益行动。它提供了一种切实可行的方法，一种家长实施监控的管道，使家长纠正部分未成年子女沉迷游戏的行为成为可能。<br />
+                该项社会公益行动充分反映了中国网络游戏行业高度的社会责任感，对未成年玩家合法权益的关注及对用实际行动营造和谐社会的愿望。<br />
+                随着网络在青少年中的普及，未成年人接触网络游戏已经成为普遍现象。为保护未成年人健康参与游戏，在政府进一步加强行业管理的前提下，家长也应当加强监护引导。为此，我们为未成年人参与网络游戏提供以下意见：<br /><br />
+                主动控制游戏时间。游戏只是学习、生活的调剂，要积极参与线下的各类活动，并让父母了解自己在网络游戏中的行为和体验。<br />
+                不参与可能耗费较多时间的游戏设置。不玩大型角色扮演类游戏，不玩有PK类设置的游戏。在校学生每周玩游戏不超过2小时，每月在游戏中的花费不超过10元。<br />
+                不要将游戏当作精神寄托。尤其在现实生活中遇到压力和挫折时，应多与家人朋友交流倾诉，不要只依靠游戏来缓解压力。<br />
+                养成积极健康的游戏心态。克服攀比、炫耀、仇恨和报复等心理，避免形成欺凌弱小、抢劫他人等不良网络行为习惯。<br />
+                注意保护个人信息。包括个人家庭、朋友身份信息，家庭、学校、单位地址，电话号码等，防范网络陷阱和网络犯罪。<br />
+                <br />
+                <br /><br />
+                监护申请流程<br /><br />
+                1.监护人提出申请<br />
+                在监护人发现被监护人有沉溺昆山天奇盛世网络科技有限公司网络游戏的情况下，监护人可向昆山天奇盛世网络科技有限公司申请发起未成年人家长监护机制。<br />
+                监护人需亲自通过邮寄方式向我司提供有效材料，向昆山天奇盛世网络科技有限公司提出未成年人账户监控的申请。在收到邮件后，我司即开始启动监护机制审核流程，首先进入疑似账号身份确认期。<br /><br />
+                2.疑似账号身份确认期（15个自然日）<br />
+                在判断申请材料完整的情况下，我司将通过官方邮箱联系疑似帐号归属者，告知其在15个自然日内将按照监护人需求对其账号进行相关操作，并要求疑似账号归属者提供身份材料以便我司判定其与监护人监护关系；<br />
+                若疑似账号归属者在15个自然日内不能提供有效身份证明或逾期提供，则默认为疑似账号归属者与被监护人身份相符。我司即按照监护人申请要求，对其游戏账号纳入防沉迷系统；<br />
+                若疑似账号归属者在15个自然日内提供的身份证明与被监护人相符，我司即按照监护人申请要求，对其游戏账号纳入防沉迷系统；<br />
+                若疑似账号归属者在15个自然日内提供的身份证明与被监护人不符，我司则无法判定其与被监护人的身份关系。在此情况下，为保障用户游戏账号安全，我司将通知监护人通过公安机关出具账号找回协查证明，由我司协助被监护人找回游戏账号后再进行后续操作；<br /><br />
+               <a href="../../../images/sjzy_jzjh.doc" style="color: blue">昆山天奇盛世网络科技有限公司未成年人用户家长监控服务申请书</a> <br /><br />
+                常见问题解答<br /><br />
+                Q1："网络游戏未成年人家长监护机制工程"是什么？<br />
+                "网络游戏未成年人家长监护工程"是一项由各大网络六家网络游戏企业共同发起并参与实施，由中华人民共和国文化部指导，旨在加强家长对未成年人参与网络游戏的监护，引导未成年人健康、绿色参与网络游戏，和谐家庭关系的社会性公益行动。<br />它提供了一种切实可行的方法，一种家长实施监控的管道，使家长纠正部分未成年子女沉迷游戏的行为成为可能。<br />该项社会公益行动充分反映了中国网络游戏行业高度的社会责任感，对未成年玩家合法权益的关注以及对用实际行动营造和谐社会的愿望。<br /><br />
+
+                Q2：什么情况下需要申请该项服务呢？<br />
+                在监护人发现被监护人有沉溺昆山天奇盛世网络科技有限公司网络游戏的情况下，监护人可向昆山天奇盛世网络科技有限公司申请发起未成年人家长监护机制。<br /><br />
+
+                Q3：申请该项服务时需要提交哪些资料呢？如何提交呢？<br />
+                申请人需通过邮寄方式向我司提交《昆山天奇盛世网络科技有限公司未成年人用户家长监控服务申请书》及其中所提及需提供的附件，包含：<br /><br />
+                附件1：申请人的身份证或户口本（复印件）<br />
+                附件2：被申请人的身份证或户口本（复印件）<br />
+                附件3：申请人与被申请人的监护法律关系证明（原件）<br />
+                您在填写《昆山天奇盛世网络科技有限公司未成年人用户家长监控服务申请书》时，请提供尽可能详尽、真实的玩家资料，以便帐号归属的判定。<br />
+
+                Q4：提交资料后，后续处理流程怎样呢？<br />
+                您提交相关申请资料后，我司客服人员将按照监护申请流程尽快处理您的申请，处理过程中可能需要对监护人和被监护人进行电话回访以便信息的判定，希望您的配合。<br /><br />
+
+                Q5：判定帐号归属需要多久呢？<br />
+                在判断申请材料完整的情况下，我司将联系疑似账号归属者，告知其在15个自然日内将按照监护人需求对其账号进行相关操作，并要求疑似账号归属者提供身份材料以便我司判定其与监护人监护关系；<br /><br />
+                若疑似账号归属者在15个自然日内不能提供有效身份证明或逾期提供，则默认为疑似账号归属者与被监护人身份相符。我司即按照监护人申请要求，对其游戏账号纳入防沉迷系统；<br />
+                若疑似账号归属者在15个自然日内提供的身份证明与被监护人相符，我司即按照监护人申请要求，对其游戏账号纳入防沉迷系统；<br />
+                若疑似账号归属者在15个自然日内提供的身份证明与被监护人不符，我司则无法判定其与被监护人的身份关系。<br />
+                在此情况下，为保障用户游戏账号安全，我司将通知监护人通过公安机关出具账号找回协查证明，由我司协助被监护人找回游戏账号后再进行后续操作；<br />
+
+
+
+            </div>
+            <input type="button" value="上一篇" width="30%" onclick="location.href='9154.html'" style="float: right; margin-right: 50px;text-overflow: ellipsis;">
+            <input type="button" value="下一篇" width="30%" onclick="location.href='0923.html'" style="float: right; margin-right: 50px;text-overflow: ellipsis;">
+
+    </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="../../../js/foot3.js"></script>
+
+    <!-- <div class="qrcodesj"></div>
+    <div class="downdiv">
+        <a href="javascript:void(0)" target="_blank">下载赏金战役</a>
+    </div> -->
+</body>
+</html>

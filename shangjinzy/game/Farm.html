@@ -1,0 +1,151 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-游戏介绍</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/main2.js"></script>
+    <script src="../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../images/favicon.png">
+
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(../images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    </style>
+
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../index.html" class="logo"></a>
+
+
+            <div class="link clear">
+                <a href="../index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏简介</h1>
+            <h2>Game Intro</h2>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../images/banner-farm02.png", "../images/banner-farm02.png"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+<div class="container clear">
+    <div class="side">
+        <dl class="sidemenu">
+            <dt>游戏资料</dt>
+            <dd class=select>
+                <a href="#">游戏介绍</a></dd>
+            <dd ><a href="Video.html">视频资料</a></dd>
+            <dd><a href="guide.html">新手指南</a></dd>
+        </dl>
+
+    </div>
+    <div class="main">
+        <div class="main-head">游戏介绍</div>
+
+        <dl class="main-farm-menu">
+            <dd><a href="Farm.html" class="select">游戏介绍</a></dd>
+            <dd><a href="Arms.html">士兵介绍</a></dd>
+            <dd><a href="Barr.html">兵营介绍</a></dd>
+            <dd><a href="Prop.html">道具介绍</a></dd>
+            <dd><a href="Joss.html">守卫先锋介绍</a></dd>
+        </dl>
+       
+
+        <div class="main-farm">
+            <p style="text-indent:28px;">
+                赏金战役是昆山天奇盛世网络科技有限公司开发的一款以未来科技智能战士为背景的养成策略类游戏，作品以科幻风格展示基地、兵营、未来战士、守卫先锋、星灵等。同时赏金战役结合互联网+模式，丰富了养成类游戏玩法的单一。</p>
+            <p style="text-indent:28px;">游戏中，玩家扮演基地统帅者，完成招募士兵、培养士兵、训练出未来战士的过程，养成期间玩家需要时刻注意能源枯竭、病毒、灾害的侵袭等。当未来战士到达一定数量，玩家即可对基地、兵营进行升级，获得更高等级的基地、兵营，训练出高等级的未来战士。同时玩家也可以在游戏拍卖行购买或售卖未来战士，从而实现游戏收益最大化。</p>
+</div>
+        
+    </div>
+</div>
+<script type="text/javascript" src="../js/foot2.js" ></script>
+</body>
+</html>

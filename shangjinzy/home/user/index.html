@@ -1,0 +1,556 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-用户中心</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../css/animate.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/base.css" rel="stylesheet" />
+
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/jquery.backstretch.min.js"></script>
+    <script src="../../js/wow.min.js"></script>
+    <script src="../../js/main2.js"></script>
+    <script src="../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch--icon.png">
+    <link rel="icon" href="../../images/favicon.png">
+    
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../index.html" class="logo"></a>
+             <ul class="menu clear" id="menu">
+                <li><i class="icon">&#xe601;</i><a href="../../index.html">首页</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe609;</i><a href="#">交易中心</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe600;</i><a href="../../game/Farm.html">游戏介绍</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe608;</i><a href="../../new.html">游戏公告</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe60a;</i><a href="../../about/aboutus.html">关于我们</a><i class="icon arrow">&#xe603;</i></li>
+            </ul> 
+
+            <div class="link clear">
+                    <!-- <a href="">用户中心</a> -->
+                    <a href="#">退出</a>
+            </div>
+            <div class="switch" id="switch"><i></i></div>
+        </div>
+    </div>
+    
+
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>用户中心</h1>
+            <h2>User Center</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../images/features-bg.jpg", "../../images/features-bg.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+
+
+<form action="" enctype="multipart/form-data" id="form" method="post">    
+    <div class="container clear">
+        <div class="side">
+            <ul id="side-menu-toggle" class="side-menu-toggle">
+
+    <li class=open>
+        <div class="link">用户中心</div>
+        <ul class="side-menu-toggle-sub side-menu-toggle-sub-show">
+            <li><a href="./index.html" class=select>账户概要</a></li>
+            <li><a href="./save.html">安全设置</a></li>
+            
+            <li><a href="./deposit.html" >账户充值</a></li>
+            <li><a href="./withdraw.html" >金币提现</a></li>
+            
+            <li><a href="./financeDetail.html" >金币明细</a></li>
+        </ul>
+    </li>
+
+    <li >
+        <div class="link">拍卖行</div>
+        <ul class="side-menu-toggle-sub ">
+            
+            <li><a href="./entrust.html" >委托记录</a></li>
+            <li><a href="./tradeHistory.html" >交易记录</a></li>
+            
+            
+            
+            <li><a href="./give.html" >士兵赠送</a></li>
+            <li><a href="./giveHistory.html" >赠送记录</a></li>
+        </ul>
+    </li>
+
+
+    <li >
+        <div class="link">推广中心</div>
+        <ul class="side-menu-toggle-sub ">
+            <!-- <li><a href="./popLink.html" >推广链接</a></li> -->
+            <li><a href="./popDetail.html" >推广列表</a></li>
+            <li><a href="./popReward.html" >推广奖励</a></li>
+            <li><a href="./fillReferId.html" >补推广码</a></li>
+            <!--
+            <li><a href="/User/PopResources" >推广资料</a></li>
+            -->
+            <li><a href="./popContact.html" >联系资料</a></li>
+            <li><a href="./popTutor.html" >我的导师</a></li>
+        
+              <!--
+            <li><a href="/User/PopComplaintList" >投诉列表</a></li>
+            -->
+
+        </ul>
+    </li>
+
+
+</ul>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        var Toggle = function (el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+        }
+
+        Toggle.prototype.dropdown = function (e) {
+            var $el = e.data.el;
+            $this = $(this),
+            $next = $this.next();
+
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+
+            if (!e.data.multiple) {
+                $el.find('.side-menu-toggle-sub').not($next).slideUp().parent().removeClass('open');
+            };
+
+        }
+
+        var toggle = new Toggle($('#side-menu-toggle'), false);
+
+    });
+</script>
+
+        </div>
+
+        <div class="main">
+
+
+            <div class="uc-head uc-head-border">个人首页</div>
+            <div class="uc-home clear">
+
+                <div class="face">
+                    <div class="img"><img id="face" src="http://file.taojingy.com/Default/user.Png" /></div>
+                    <div class="cov"><span>修改</span><input type="file" id="Image" name="Image" title="请自行准备宽高1:1的图片,系统会自动切割图片." onchange="getPhotoSize(this)" /></div>
+                </div>
+                <div class="text">
+                    <h1 style="color: #888;">您好 <span class="color-1">小明</span> <cite id="Hello">来杯热茶，让精神抖擞起来！</cite></h1>
+                    <h2 style="color: #888;">账号：189****6789 （ID: 1）</h2>
+                    <h3 style="color: #888;">登录：2017/9/12 11:04:21</h3>
+                </div>
+                <div class="cert clear">
+<style type="text/css">
+.icon {
+    font-family: "icon" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+</style>
+
+                    <cite>
+                        <a href="certificated.html"><i class="icon color">&#xe616;</i></a>
+                        <span>实名认证</span>
+                    </cite>
+                    <cite>
+                        <a href="bindBankCard.html"><i class="icon color">&#xe615;</i></a>
+                        <span>提现账户</span>
+                    </cite>
+                        <cite>
+                            <a href="institution.html"><i class="icon">&#xe614;</i></a>
+                            <span>普通会员</span>
+                        </cite>
+                </div>
+            </div>
+
+
+            <dl class="uc-money clear">
+                <dd>
+                    <cite>0.0000</cite>
+                    <span>账户总额</span>
+                </dd>
+                <dd>
+                    <cite>0.0000</cite>
+                    <span>冻结金币</span>
+                </dd>
+                <dd>
+                    <cite>0.0000</cite>
+                    <span>可用金币</span>
+                </dd>
+                <dt class="clear">
+                    <a href="deposit.html" class="button">金币充值</a>
+                    <a href="withdraw.html" class="button">金币提现</a>
+                </dt>
+            </dl>
+
+            <dl class="uc-money clear">
+                <dd>
+                    <cite>0.0000</cite>
+                    <span>基地资产总额</span>
+                </dd>
+                <dd>
+                  
+                        <cite>0.0000</cite>
+                        <span>兵营预估价值</span>
+                   
+                </dd>
+                <dd>
+                    <cite>0.0000</cite>
+                    <span>钻石价值</span>
+                </dd>
+                <dt class="clear">
+                    
+                </dt>
+            </dl>
+
+            <div class="uc-head"><span class="color-1" onclick="ShowTable('t1'); $('#click2').removeClass('color-1'); $(this).addClass('color-1');" style="margin-right:20px; cursor:pointer;" id="click1">持有产品</span> </div>
+
+            <div class="tablebox">
+                <table class="table" id="t2" style="display:none;">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>名称</th>
+                            <th>总购买</th>
+                            <th>持有价值</th>
+                            <th>总出售</th>
+                            <th>浮动奖励</th>
+                        </tr>
+                    </thead>
+                    <tbody id="td2" hasdata="false">
+                        <tr>
+                            <td class="algin" colspan="6">暂无数据</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="table" id="t1">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>名称</th>
+                            <th>持有量</th>
+                            <th>冻结量</th>
+                            <th>市值</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                                    <tr>
+                                        <td><img src="../../images/market/800002.png" width="30" /></td>
+                                        <td>艾斯特</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="../../images/market/800003.png" width="30" /></td>
+                                        <td>雷斯</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="../../images/market/800004.png" width="30" /></td>
+                                        <td>穆得</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="../../images/market/800005.png" width="30" /></td>
+                                        <td>科亚</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0.0000</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="../../images/market/800006.png" width="30" /></td>
+                                        <td>奥巴斯</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>0.0000</td>
+                                    </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td style="text-align:right;">共计：</td>
+                                <td><b>0.0000</b></td>
+                                <td></td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</form>
+
+<script src="../../js/jquery.form.js"></script>
+<script type="text/javascript">
+    function getPhotoSize(obj) {
+        photoExt = obj.value.substr(obj.value.lastIndexOf(".")).toLowerCase();//获得文件后缀名
+        if (photoExt != '.jpg' && photoExt != '.png') {
+            alert("请上传后缀名为jpg或png的照片!");
+            return false;
+        }
+        var fileSize = 0;
+        var isIE = /msie/i.test(navigator.userAgent) && !window.opera;
+        if (isIE && !obj.files) {
+            var filePath = obj.value;
+            var fileSystem = new ActiveXObject("Scripting.FileSystemObject");
+            var file = fileSystem.GetFile(filePath);
+            fileSize = file.Size;
+        } else {
+            fileSize = obj.files[0].size;
+        }
+        fileSize = Math.round(fileSize / 1024 * 100) / 100; //单位为KB
+        if (fileSize >= 200) {
+            alert("照片最大尺寸为200KB，请重新上传!");
+            return false;
+        }
+        var lock = true;
+        $('#form').submit(function () {
+            if (lock) {
+                var jqUpload = $(this);
+                $('#form').ajaxSubmit({
+                    type: 'post',
+                    url: '/User/UploadPortrait',
+                    dataType: 'text',
+                    beforeSend: function () {
+                        $("#face").addClass("spinning");
+                    },
+                    complete: function () {
+                        lock = false;
+                        $("#face").removeClass("spinning");
+                    },
+                    success: function (json) {
+                        $("#face").removeClass("spinning");
+                        json = eval('(' + json + ')');
+                        if (json.success) {
+                            $("#face").attr("src", "http://file.taojingy.com//" + json.image + "?" + Math.random());
+                            $("#Image").remove();
+                            $(".cov").append("<input type=\"file\" id=\"Image\" name=\"Image\" title=\"请自行准备宽高1:1的图片,系统会自动切割图片.\"  onchange=\"getPhotoSize(this)\"/>");
+                        }
+                        else {
+                            alert(json.message);
+                        }
+                    },
+                    error: function (msg) {
+                        $("#face").removeClass("spinning");
+                        alert("文件上传失败");
+                    }
+                });
+            }
+            return false;
+        });
+        $("#form").submit();
+    }
+
+    function ShowTable(elem) {
+        if (elem == 't1') {
+            $("#t1").removeAttr("style");
+            $("#t2").attr("style", "display:none;");
+        } else {
+            GetProfitAndLoss();
+            $("#t2").removeAttr("style");
+            $("#t1").attr("style", "display:none;");
+        }
+    }
+
+    function GetProfitAndLoss() {
+
+        if ($("#td2").attr("hasdata") == "false") {
+            $.ajax({
+                type: "post",
+                url: "/User/GetProfitAndLoss",
+                datatype: "text",
+                data: {},
+                beforeSend: function () {
+
+                },
+                complete: function () {
+
+                },
+                success: function (result) {
+
+                    var json = eval('(' + result + ')');
+
+                    if (json.success) {
+
+                        var items = json.data;
+                        var html = "";
+                        var sum = 0;
+                        for (i = 0; i < items.length; i++) {
+                            html = html + "<tr>";
+                            html = html + "<td><a href=\"/Market/Detail/" + items[i]['Code'] + "\"><img src=../../images/" + items[i]['Code'] + ".png width=\"30\" /></a></td>";
+                            html = html + "<td><a href=\"/Market/Detail/" + items[i]['Code'] + "\">" + items[i]["name"] + "</a></td>";
+                            html = html + "<td>" + items[i]["b"].toFixed(4) + "</td>"; //总购买
+                            html = html + "<td>" + items[i]["h"].toFixed(4) + "</td>"; //持有价值
+                            html = html + "<td>" + items[i]["s"].toFixed(4) + "</td>"; //总出售
+                            if (parseFloat(items[i]["Column1"]) > 0) {
+                                html = html + "<td class=\"color-1\">" + items[i]["Column1"].toFixed(4) + "</td>";   //浮动盈亏
+                            } else if (parseFloat(items[i]["Column1"]) < 0) {
+                                html = html + "<td class=\"color-4\">" + items[i]["Column1"].toFixed(4) + "</td>";   //浮动盈亏
+                            } else {
+                                html = html + "<td>" + items[i]["Column1"].toFixed(4) + "</td>";   //浮动盈亏
+                            }
+
+                            html = html + "</tr>";
+                            sum = sum + parseFloat(items[i]["Column1"]);
+                        }
+
+                        if (sum > 0) {
+                            html = html + "<tr><td></td><td></td><td></td><td></td><td style=\"text-align:right;\">共计：</td><td class=\"color-1\"><b>" + sum.toFixed(4) + "</b></td></tr>";
+                        }
+                        else if (sum < 0) {
+                            html = html + "<tr><td></td><td></td><td></td><td></td><td style=\"text-align:right;\">共计：</td><td class=\"color-4\"><b>" + sum.toFixed(4) + "</b></td></tr>";
+                        }
+                        else {
+                            html = html + "<tr><td></td><td></td><td></td><td></td><td style=\"text-align:right;\">共计：</td><td><b>" + sum.toFixed(4) + "</b></td></tr>";
+                        }
+
+                        //
+                        $("#td2").html(html);
+                        $("#td2").attr("hasdata", "true");
+                    } else {
+                        $("#td2").html("<td class=\"algin\" colspan=\"6\">查询数据失败</td>");
+                    }
+                },
+                error: function () {
+                    $("#td2").html("<td class=\"algin\" colspan=\"6\">查询数据失败</td>");
+                }
+            });
+        }
+    }
+
+    
+
+
+
+
+    $(function () {
+        Hello();
+        if ("" != "") {
+            alert("");
+        }
+    });
+
+    function Hello() {
+        var now = new Date();
+        var hr = now.getHours();
+        if (hr == 0)
+        { $("#Hello").html("，晚安！明天早些起床哦！") }
+        if (hr == 1)
+        { $("#Hello").html("，午夜1点多了，还在干什么啊？") }
+        if (hr == 2)
+        { $("#Hello").html("，是不是该睡觉了？") }
+        if (hr == 3)
+        { $("#Hello").html("，还不睡！小心变熊猫！") }
+        if (hr == 4)
+        { $("#Hello").html("，您是一夜未睡还是刚起床呀？") }
+        if (hr == 5)
+        { $("#Hello").html("，您这么早起床有事吗？") }
+        if (hr == 6)
+        { $("#Hello").html("，您已经准备要刷牙洗脸了？") }
+        if (hr == 7)
+        { $("#Hello").html("，您准备要去上班或上课了吗？") }
+        if (hr == 8)
+        { $("#Hello").html("，早餐吃了沒呀?已经开始上班了吗？") }
+        if (hr == 9)
+        { $("#Hello").html("，来杯咖啡，好好上班。") }
+        if (hr == 10)
+        { $("#Hello").html("，现在是上午10点了！困吗？") }
+        if (hr == 11)
+        { $("#Hello").html("，再忍耐一下，就快午休了！") }
+        if (hr == 12)
+        { $("#Hello").html("，吃饭去吧！") }
+        if (hr == 13)
+        { $("#Hello").html("，想不想要睡个午觉呀？") }
+        if (hr == 14)
+        { $("#Hello").html("，不要边打瞌睡边流口水哦！") }
+        if (hr == 15)
+        { $("#Hello").html("，来杯热茶，让精神抖擞起来？") }
+        if (hr == 16)
+        { $("#Hello").html("，再忍一下...就快下班了！") }
+        if (hr == 17)
+        { $("#Hello").html("，准备好下班了吗？") }
+        if (hr == 18)
+        { $("#Hello").html("，终于下班了！") }
+        if (hr == 19)
+        { $("#Hello").html("，吃饭了吗?不要虐待自己喔！") }
+        if (hr == 20)
+        { $("#Hello").html("，晚安!看完新闻，看看书吧？") }
+        if (hr == 21)
+        { $("#Hello").html("，来杯热茶，让精神抖擞起来！") }
+        if (hr == 22)
+        { $("#Hello").html("，来杯热茶，让精神抖擞起来！") }
+        if (hr == 23)
+        { $("#Hello").html("，哇!又是一天过去了，准备上床睡觉了！") }
+    }
+
+</script>
+    
+    <script type="text/javascript" src="../../js/foot1.js"></script>
+    <!-- <div class="qrcodex"></div>
+    <div class="downdiv">
+        <a href="http://www.taojinnc.com/down/" target="_blank">下载淘金农场</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/Static/Video" target="_blank">淘金农场视频</a>
+    </div> -->
+
+   
+</body>
+</html>

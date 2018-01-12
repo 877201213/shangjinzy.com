@@ -1,0 +1,262 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-用户中心-账号注册</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../css/animate.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/base.css" rel="stylesheet" />
+
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/jquery.backstretch.min.js"></script>
+    <script src="../../js/wow.min.js"></script>
+    <script src="../../js/main2.js"></script>
+    <script src="../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="../../images/favicon.png">
+
+    <script type="text/javascript">
+        $(function () {
+            $("#IDCardNum").keyup(function () {
+                $(this).val($(this).val().toUpperCase());
+            });
+
+            // if (!IsWebDesk()) {
+            //     $("#Phone").attr('type', 'tel');
+            //     $("#MobileVCode").attr('type', 'tel');
+            // }
+        });
+
+        function GetSMS() {
+            if (checkMobile($("#Phone").val())) {
+                showTime(180);
+                // $.post("/Common/GetSMS_Reg", { PhoneNo: $("#Phone").val(),VCode:$("#VCode").val() }, function (data, textStatus) {
+                //     if (data.result) {
+                //         showTime(180);
+                //     }
+                //     else
+                //         alert(data.msg);
+                // });
+            }
+            else {
+                alert('请输入正确的手机号码');
+            }
+        }
+
+        function checkMobile(str) {
+            var re = /^1\d{10}$/
+            if (re.test(str)) {
+            return true;
+            } else {
+            return false;
+            }
+        }
+
+        function showTime(s) {
+            $("#Sec").val(s);
+            $("#Sms").text(s + "秒后重新获取");
+            $("#Sms").addClass("progress");
+            $("#Sms").attr("disabled", "disabled");
+
+            $("#Sec").val(s);
+            if (s != 0) {
+                s = s - 1;
+                setTimeout("showTime(" + s + ")", 1000);
+            }
+            else {
+                $("#Sec").val("");
+                $("#Sms").removeClass("progress");
+                $("#Sms").removeAttr("disabled");
+                $("#Sms").text("获取手机验证码");
+            }
+        }
+
+        function PreSubmit() {
+
+            if (!isChineseName($("#Name").val())) {
+                $("span[data-valmsg-for=Name]").html("请输入正确的姓名");
+                return false;
+            }
+
+            if (!checkCard($("#IDCardNum").val())) {
+                $("span[data-valmsg-for=IDCardNum]").html("请输入正确的身份证号码");
+                return false;
+            }
+
+            if ($("#PasswordText").val() != "" && $("#RePasswordText").val() != "") {
+                $("#Password").val(md5($("#PasswordText").val() + $("#PasswordText").val()));
+                $("#RePassword").val(md5($("#RePasswordText").val() + $("#RePasswordText").val()))
+                $("form").submit();
+            } else {
+                alert("请输入完整的表单信息");
+                return false;
+            }
+        }
+
+    </script>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../index.html" class="logo"></a>
+             <ul class="menu clear" id="menu">
+                <li><i class="icon">&#xe601;</i><a href="../../index.html">首页</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe609;</i><a href="#">交易中心</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe600;</i><a href="../../game/Farm.html">游戏介绍</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe608;</i><a href="../../new.html">游戏公告</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe60a;</i><a href="../../about/aboutus.html">关于我们</a><i class="icon arrow">&#xe603;</i></li>
+            </ul> 
+
+            <div class="link clear">
+                    <!-- <a href="">用户中心</a> -->
+                    <a href="#">退出</a>
+            </div>
+            <div class="switch" id="switch"><i></i></div>
+        </div>
+    </div>
+    
+
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>用户中心</h1>
+            <h2>User Center</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../images/features-bg.jpg", "../../images/features-bg.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+<form action="" method="post">    
+    <div class="container">
+        <div class="loginbox">
+            <div class="loginbox-inner">
+                <div class="loginbox-inner-head">淘金通行证注册</div>
+                <div class="loginbox-inner-form">
+
+                    <div class="form-group">
+                        <div class="form-group-addon no-right-border">手　　机</div>
+                        <div class="form-group-input stretch">
+                            <input class="stretch" data-val="true" data-val-regex="手机号格式错误" data-val-regex-pattern="^1[0-9]{10}" data-val-required="请填写手机号" id="Phone" name="Phone" placeholder="请输入手机号" type="text" value="" />
+                        </div>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+
+
+                    <div class="form-group">
+                        <div class="form-group-addon no-right-border">真实姓名</div>
+                        <div class="form-group-input stretch">
+                            <input class="stretch" data-val="true" data-val-required="请输入真实姓名" id="Name" name="Name" placeholder="请填写和证件一致的真实姓名" type="text" value="" />
+                        </div>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+
+                    <div class="form-group">
+                        <div class="form-group-addon no-right-border">证件号码</div>
+                        <div class="form-group-input stretch">
+                            <input class="stretch" data-val="true" data-val-required="请输入证件号码" id="IDCardNum" name="IDCardNum" placeholder="请填写真实有效的证件号码" type="text" value="" />
+                        </div>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="IDCardNum" data-valmsg-replace="true"></span>
+
+
+                    <div class="form-group">
+                        <div class="form-group-addon no-right-border">密　　码</div>
+                        <div class="form-group-input stretch">
+                            <input type="password" class="stretch" id="PasswordText" placeholder="请输入密码" } />
+                            <input id="Password" name="Password" type="hidden" value="" />
+                        </div>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+
+                    <div class="form-group">
+                        <div class="form-group-addon no-right-border">确认密码</div>
+                        <div class="form-group-input stretch">
+                            <input type="password" class="stretch" id="RePasswordText" placeholder="请再次输入密码" } />
+                            <input id="RePassword" name="RePassword" type="hidden" value="" />
+                        </div>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="RePassword" data-valmsg-replace="true"></span>
+
+                    <div class="form-group">
+                        <div class="form-group-addon no-right-border">图片验证</div>
+                        <div class="form-group-input stretch">
+                            <input class="stretch" data-val="true" data-val-required="请填写图片验证码" id="VCode" maxLength="4" name="VCode" type="text" value="" />
+                        </div>
+                        <div class="form-group-addon no-left-border code">
+                            <a id="changeImg" style="margin-right: 0;"><canvas id="canvas" width="120" height="40"></canvas></a>
+                            <script src="../../js/code.js"></script>
+                        </div>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="VCode" data-valmsg-replace="true"></span>
+
+                    <div class="form-group">
+                        <div class="form-group-addon no-right-border">短信验证</div>
+                        <div class="form-group-input stretch">
+                            <input class="stretch" data-val="true" data-val-regex="短信验证码错误" data-val-regex-pattern="\d{6}" data-val-required="请填写短信验证码" id="MobileVCode" maxLength="6" name="MobileVCode" placeholder="" type="text" value="" />
+                        </div>
+                        <div class="form-group-input">
+                            <button class="no-left-border button-color-2" type="button" onclick="GetSMS()" id="Sms">获取手机验证码</button>
+                        </div>
+                    </div>
+                    <span class="field-validation-valid" data-valmsg-for="MobileVCode" data-valmsg-replace="true"></span>
+
+                    <div class="form-group hide" id="friend">
+                        <div class="form-group-addon no-right-border">　推荐码</div>
+                        <div class="form-group-input stretch">
+                            <input class="stretch" data-val="true" data-val-number="字段 RefCode 必须是一个数字。" id="RefCode" name="RefCode" placeholder="请输入推荐码" type="text" value="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="button" class="button button-color-1 button-stretch" value="我已阅读并同意相关协议" onclick="return PreSubmit()" />
+                    </div>
+                    <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+
+                    <div class="form-group clear">
+                        <a onclick="$('#friend').toggle()" class="color-1">好友推荐</a>
+                        <a href="../../about/User Agreement.html" target="_blank">用户协议</a>
+                        <a href="login.html">直接登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+    <script type="text/javascript" src="../../js/foot1.js"></script>
+</body>
+</html>

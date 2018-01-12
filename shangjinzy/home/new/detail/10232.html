@@ -1,0 +1,188 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-指挥官</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../../../css/animate.css" rel="stylesheet" />
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <link href="../../../css/base.css" rel="stylesheet" />
+    <script src="../../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../../js/jquery.backstretch.min.js"></script>
+    <script src="../../../js/wow.min.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../../js/main2.js"></script>
+    <script src="../../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../../../images/favicon.png">
+    
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content-div{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(../../../images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    </style>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../../index.html" class="logo"></a>
+
+
+            <div class="link clear">
+                <a href="../../../index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+            </div>
+
+        </div>
+    </div>
+    
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+    .text-center1{
+    	text-align: center;
+    	margin-left: unset;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏公告</h1>
+            <h2>Game Data</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../../images/features-pink.jpg", "../../../images/features-pink.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+    <div class="container clear">
+        <div class="side tool-nav-bar">
+            <dl class="sidemenu">
+                <dt>游戏公告</dt>
+                <dd class=select><a href="../../../new.html">通知公告</a></dd>
+            </dl>
+
+        </div>
+        <div class="main" style="text-indent: 2em;">
+        <div class="newsitem">
+            <div class="newsitem-head">活动3：赏金战役喜迎公测</div>
+            <div class="newsitem-info">
+                <span>来源：《赏金战役》运营团队</span>
+                <span>日期：2017-10-23</span>
+            </div>
+            <div class="newsitem-text">
+                           
+                    <p style="margin-left: 22px;"> 《赏金战役》为了感谢各玩家内测以来对游戏的支持与厚爱，官方特此开放赏金公测月榜活动。高额金币奖励，更有实物大奖，让玩家体验游戏推广的乐趣。</p><br/>
+                    <p><b>活动时间：</b></p>
+                    <p>2017年10月24日12:00至2017年11月24日12:00</p>
+                    <p><b>活动规则：</b></p>
+                    <p>1.  周榜积分累计月榜积分。</p>
+                    <p>2.  所有会员均可参与积分排名。</p>
+                    <p>3.  活动开始后，新玩家或者老玩家通过升级或者推广直接会员升级可获得积分。</p>
+                    <p>4.  根据玩家在本次活动获得的积分排名定名次。积分最高的玩家第一名。以此类推排定本次活动的前500名玩家，获得奖励。（<b>积分相同的情况下，根据先后顺序依次排名。</b>）</p>
+                    <p>排定本次活动的前20名玩家，获得奖励。（积分相同的情况下，根据先后顺序依次排名。）</p>
+                    <p><b>积分获取规则：</b></p>
+                    <p>1.活动时间内参与本期活动的玩家都有机会获得积分排名，积分排行实时更新。</p>
+                    <p>2.<font style="color: orangered;">积分获取方式包括自己升级以及直接会员升级，会员升级到相应等级获得相应积分，积分可累计。</font></p>
+                    <p>3.对于游戏中不正当获得积分排名的会员，官方将给以取消其参加活动奖励的资格。</p>
+                    <img src="image/10232.jpg" class="text-center10232"/>
+                    <p class="text-center1"><b>例如：您的下级好友从4升至5级，您和您的好友同时获得100积分</b></p>
+                    <p style="text-align: center;"><b><a href="../../activ.html" style="color:cornflowerblue">赏金积分英雄榜，点此了解详情</a></b></p><br /><br />
+                    <p><b>月榜积分排名实物奖励（前三名额外奖励）：</b></p>
+                    <p>第一名：奖励价值6488元IPHONE8 128G一部<font id="font110232">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font>（要求12888积分以上）</p>
+                    <p>第二名：奖励价值2999元小米43寸液晶电视一台<font id="font210232">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</font>（要求6888积分以上）</p>
+					<p>第三名：奖励价值999元山地自行车一辆<font id="font310232">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;</font>（要求4888积分以上）</p>
+					<br />
+					<p><b>月榜积分排名金币奖励：</b></p>
+					<p>第一名：奖励10000金币</p>
+                    <p>第二名：奖励5000 金币</p>
+					<p>第三名：奖励2000 金币</p>
+					<p>第四至十名：各奖励500金币</p>
+					<p>第十一至二十名：各奖励20000钻石</p>
+					<p>第二十一至一百名：各奖励5000钻石</p>
+					<p>第一百零一至五百名：各奖励价值20元的赏金推广福利包</p>
+					<br />
+					
+                    <p><b>奖励发放领取方式：</b></p>
+                    <p>官方会在活动结束后的三个工作日内直接将奖励发放到获奖玩家游戏账户上，排名前三的玩家则与工作人员单独联系。</p>
+
+                    <p>感谢大家一直以来与《赏金战役》相伴同行，祝大家游戏愉快！</p>
+
+                    
+
+                    <p style="float:right">此活动最终解释权归天奇盛世所有</p>
+
+				<br />
+				<br />
+            </div>
+
+    </div>
+      </div>
+    </div>
+     <script type="text/javascript" src="../../../js/foot3.js"></script>
+
+    <!-- <div class="qrcodesj"></div>
+    <div class="downdiv">
+        <a href="javascript:void(0)" target="_blank">下载赏金战役</a>
+    </div> -->
+</body>
+</html>

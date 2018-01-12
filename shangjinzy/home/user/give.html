@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-士兵赠送</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../css/animate.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/base.css" rel="stylesheet" />
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/jquery.backstretch.min.js"></script>
+    <script src="../../js/wow.min.js"></script>
+    <script src="../../js/main2.js"></script>
+    <script src="../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="../../images/favicon.png">
+    
+    <!-- <script src="../../js/jquery.validate.min.js"></script>
+    <script src="../../js/jquery.validate.unobtrusive.min.js"></script>
+    <script src="../../js/md5.js"></script> -->
+
+    <script type="text/javascript">
+        $(function () {
+            $("#Payment").keyup(function () {
+                $(this).val(FormatIntValue($(this).val()));
+            });
+
+            function FormatIntValue(value) {
+                value = value.replace(/[^\d]/g, "");
+                return value;
+            }
+        })
+    </script>
+    
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../index.html" class="logo"></a>
+             <ul class="menu clear" id="menu">
+                <li><i class="icon">&#xe601;</i><a href="../../index.html">首页</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe609;</i><a href="#">交易中心</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe600;</i><a href="../../game/Farm.html">游戏介绍</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe608;</i><a href="../../new.html">游戏公告</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe60a;</i><a href="../../about/aboutus.html">关于我们</a><i class="icon arrow">&#xe603;</i></li>
+            </ul> 
+
+            <div class="link clear">
+                    <!-- <a href="">用户中心</a> -->
+                    <a href="#">退出</a>
+            </div>
+            <div class="switch" id="switch"><i></i></div>
+        </div>
+    </div>
+    
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>用户中心</h1>
+            <h2>User Center</h2>
+        </div>
+    </div>
+</div>
+<script src="/News/Banner?Column=User" type="text/javascript"></script>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../images/features-bg.jpg","../../images/features-bg.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+<form action="" method="post">
+    <input data-val="true" data-val-number="字段 ProductId 必须是一个数字。" data-val-required="ProductId 字段是必需的。" id="ProductId" name="ProductId" type="hidden" value="0" />
+    <input data-val="true" data-val-number="字段 Type 必须是一个数字。" data-val-required="Type 字段是必需的。" id="Type" name="Type" type="hidden" value="0" />
+    <input id="PayPwd" name="PayPwd" type="hidden" value="" />    
+    <input type="hidden" id="ProductName" />
+    <input type="hidden" id="ProductCode" />
+    <input type="hidden" id="Price" value="0" />
+    <input type="hidden" id="Count" value="0" />
+    <div class="container clear">
+        <div class="side">
+            <ul id="side-menu-toggle" class="side-menu-toggle">
+
+    <li>
+        <div class="link">用户中心</div>
+        <ul class="side-menu-toggle-sub">
+            <li><a href="./index.html">账户概要</a></li>
+            <li><a href="./save.html">安全设置</a></li>
+            
+            <li><a href="./deposit.html" >账户充值</a></li>
+            <li><a href="./withdraw.html" >金币提现</a></li>
+            
+            <li><a href="./financeDetail.html" >金币明细</a></li>
+        </ul>
+    </li>
+
+    <li class=open>
+        <div class="link">拍卖行</div>
+        <ul class="side-menu-toggle-sub side-menu-toggle-sub-show">
+            
+            <li><a href="./entrust.html">委托记录</a></li>
+            <li><a href="./tradeHistory.html" >交易记录</a></li>
+            
+            
+            
+            <li><a href="./give.html" class=select>士兵赠送</a></li>
+            <li><a href="./giveHistory.html" >赠送记录</a></li>
+        </ul>
+    </li>
+
+
+    <li >
+        <div class="link">推广中心</div>
+        <ul class="side-menu-toggle-sub ">
+            <!-- <li><a href="./popLink.html" >推广链接</a></li> -->
+            <li><a href="./popDetail.html" >推广列表</a></li>
+            <li><a href="./popReward.html" >推广奖励</a></li>
+            <li><a href="./fillReferId.html" >补推广码</a></li>
+            <!--
+            <li><a href="/User/PopResources" >推广资料</a></li>
+            -->
+            <li><a href="./popContact.html" >联系资料</a></li>
+            <li><a href="./popTutor.html" >我的导师</a></li>
+        
+              <!--
+            <li><a href="/User/PopComplaintList" >投诉列表</a></li>
+            -->
+
+        </ul>
+    </li>
+
+
+</ul>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        var Toggle = function (el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+        }
+
+        Toggle.prototype.dropdown = function (e) {
+            var $el = e.data.el;
+            $this = $(this),
+			$next = $this.next();
+
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+
+            if (!e.data.multiple) {
+                $el.find('.side-menu-toggle-sub').not($next).slideUp().parent().removeClass('open');
+            };
+
+        }
+
+        var toggle = new Toggle($('#side-menu-toggle'), false);
+
+    });
+</script>
+
+        </div>
+        <div class="main">
+
+            <div class="uc-head uc-head-border">士兵赠送</div>
+            <!-- uc-form start -->
+            <div class="uc-form">
+
+                <div class="form-group">
+                    <div class="form-group-addon">赠送士兵</div>
+                    <div class="form-group-addon no-left-border form-group-addon-disabled stretch productinputshow clear" id="ProductNameText">请选择</div>
+
+                    <div class="form-group-input">
+                        <button class="no-left-border" onclick="return false;" toggle="#productstogglebox">选择 <i class="icon">&#xe610;</i></button>
+                        <div class="togglebox togglebox-bottom togglebox-right productstogglebox" style="min-width:300px;" id="productstogglebox">
+                            <dl>
+                                            <dd class="clear" onClick="ChargeFruits('2','0.0000','800002','艾斯特','0');$('#ProductNameText').html($(this).html());"><img src="../../images/market/800002.png" /><span>艾斯特(0.0000)　持有<b class="color-1">0</b>个</span></dd>
+                                            <dd class="clear" onClick="ChargeFruits('9','0.0000','800004','穆得','0');$('#ProductNameText').html($(this).html());"><img src="../../images/market/800004.png" /><span>穆得(0.0000)　持有<b class="color-1">0</b>个</span></dd>
+                                            <dd class="clear" onClick="ChargeFruits('11','0.0000','800003','雷斯','0');$('#ProductNameText').html($(this).html());"><img src="../../images/market/800003.png" /><span>雷斯(0.0000)　持有<b class="color-1">0</b>个</span></dd>
+                                            <dd class="clear" onClick="ChargeFruits('14','0.0000','800005','科亚','0');$('#ProductNameText').html($(this).html());"><img src="../../images/market/800005.png" /><span>科亚(0.0000)　持有<b class="color-1">0</b>个</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group-addon">接收对象</div>
+                    <div class="form-group-input stretch">
+                        <input class="stretch no-left-border" data-val="true" data-val-regex="请输入正确的接收人编号或手机号" data-val-regex-pattern="\d{5,}" data-val-required="请输入接收人编号或手机号" id="To" name="To" placeholder="请输入接收人ID或手机号" type="text" value="" />
+                    </div>
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="To" data-valmsg-replace="true"></span>
+
+
+
+                <div class="form-group">
+                    <div class="form-group-addon">赠送数量</div>
+                    <div class="form-group-input stretch">
+                        <input class="stretch no-left-border" data-val="true" data-val-number="字段 Number 必须是一个数字。" data-val-required="Number 字段是必需的。" id="Number" name="Number" placeholder="请输入赠送数量" type="text" value="" />
+                    </div>
+                </div>
+
+                <span class="field-validation-valid" data-valmsg-for="Number" data-valmsg-replace="true"></span>
+                <div class="form-group payment">
+                    <div class="form-group-addon">索取金币</div>
+                    <div class="form-group-input stretch">
+                        <input class="stretch no-left-border" data-val="true" data-val-number="字段 Payment 必须是一个数字。" id="Payment" name="Payment" placeholder="请输入索取金币" type="text" value="" />
+                    </div>
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="Payment" data-valmsg-replace="true"></span>
+                <div class="form-group">
+                    <div class="form-group-addon">支付密码</div>
+                    <div class="form-group-input stretch">
+                        <input class="stretch no-left-border" id="Pwd" name="Pwd" placeholder="请输入支付密码" type="password" value="" />
+                    </div>
+                </div>
+                <div class="form-group hide charge"> 
+                    <div class="form-group-addon">手续费用</div>
+                    <div class="form-group-addon no-left-border form-group-addon-disabled stretch clear" id="charge"></div>
+                </div>
+
+                <div class="form-group">
+                    <input type="button" class="button-color-1 button-stretch" value="提交" onclick="return Give();" />
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="Err" data-valmsg-replace="true"></span>
+            </div>
+            <!-- uc-form end -->
+
+            <div class="message message-help">
+                温馨提示：<br />
+                1. <span class="color-1">索取金币：接收方确认收货时支付给赠送方的金币。</span>索取金币需为大于零的整数，不填为零。<br />
+                2. 接收对象可以是对方的ID或者手机号码。<br />
+                3. 赠送士兵的数量必须是10的整倍。<br />
+                4. <span class="color-1">在接收方确认接收之前，赠送方可自行撤销本次赠送。</span><br />
+                5. 赠送方和获赠方，必须4级实名才能赠送和接收。
+            </div>
+
+        </div>
+    </div>
+</form>
+<script type="text/javascript">
+
+    $(function () {
+        if (!IsWebDesk()) {
+            $("#Number").attr('type', 'tel');
+        }
+    });
+
+    var intFormatFloat = 4;
+    if ($("#ProductCode").val() == '900001') {
+        intFormatFloat = 4;
+    }
+
+    function FormatIntValue(value) {
+        value = value.replace(/[^\d]/g, "");
+        return value;
+    }
+
+    function FormatFloatValue(value) {
+        value = value.replace(/[^\d.]/g, "");
+        value = value.replace(/^\./g, "");
+        value = value.replace(/\.{2,}/g, ".");
+        value = value.replace(".", "$#$").replace(/\./g, "").replace("$#$", ".");
+        if (value.indexOf(".") != -1) {
+            points = value.substring(value.indexOf("."));
+            value = value.replace(points, "");
+            if (points.length > intFormatFloat + 1) {
+                points = points.substring(0, intFormatFloat + 1);
+            }
+            value = value + points;
+        }
+        return value;
+    }
+
+
+    function ChargeFruits(id,price,code,name,count){
+
+
+        $('#ProductId').val(id);
+        $('#Price').val(price);
+        $('#ProductCode').val(code);
+        $('#ProductName').val(name);
+        $('#Count').val(count);
+
+        if(parseInt(count)<parseInt($("#Number").val())){
+            $("#Number").css('color', '#FF0000');
+            count = parseInt(count / 10) * 10;
+            $("#Number").val(count)
+        }
+
+        FlushCharge();
+    }
+
+    function FlushCharge() {
+        var price = parseFloat($("#Price").val());
+        var number = parseInt($("#Number").val());
+        var charge = price * number * parseFloat("0.1");
+        $("#charge").html(charge.toFixed(intFormatFloat));
+    }
+
+    $("#Number").keyup(function () {
+        $(this).val(FormatIntValue($(this).val()));
+
+        var count = $("#Count").val();
+
+        if (parseInt($(this).val()) > parseInt(count)) {
+            $(this).css('color', '#FF0000');
+            if ($("#ProductCode").val() != "800018" || $("#ProductCode").val() != "800021" || $("#ProductCode").val() != "800019"){
+                count = parseInt(count / 10) * 10;
+            }
+            $(this).val(count);
+        }
+
+        FlushCharge();
+
+    });
+
+    $("#Payment").keyup(function () {
+        $(this).val(FormatFloatValue($(this).val()));
+    });
+
+    function Give() {
+
+        if (typeof ($("#ProductNameText b").html()) == 'undefined') {
+            alert("请选择赠送士兵.");
+            return false;
+        }
+        if ($("#To").val() == '') {
+            alert("请输入赠送对象.");
+            return false;
+        }
+
+        if (isNaN($("#Number").val()) || $("#Number").val() == 0) {
+            alert("请输入赠送士兵数量");
+            return false;
+        }
+
+        //if ($("#Number").val() % 10 != 0) {
+        //    alert("士兵赠送数量只能是10的倍数.");
+        //    return false;
+        //}
+        if ($("#Pwd").val()=='') {
+            alert("请输入支付密码");
+            return false;
+        }
+        var price = parseFloat($("#Price").val());
+        var number = parseInt($("#Number").val());
+
+        $("#PayPwd").val(md5($("#Pwd").val() + $("#Pwd").val()));
+        var message = "";
+        if ($("#Type").val() == 1) {
+            message = '您确定赠送 ' + $("#Number").val() + ' 个 ' + $("#ProductName").val() + ' 给用户 ' + $("#To").val() + ' 并支付 ' + $("#charge").html() + ' 金币';
+        } else {
+            message = '您确定赠送 ' + $("#Number").val() + ' 个 ' + $("#ProductName").val() + ' 给用户 ' + $("#To").val();
+        }
+
+        if ( confirm(message)) {
+            $("form").submit();
+        }
+
+    }
+</script>
+    <script type="text/javascript" src="../../js/foot1.js"></script>
+
+   
+</body>
+</html>

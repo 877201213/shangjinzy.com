@@ -1,0 +1,176 @@
+﻿
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-加入我们</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/utilities.js"></script>
+
+    <script src="../js/main2.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../images/favicon.png">
+    
+
+
+    <style type="text/css">
+    .select{
+        color: #FF6600;
+    }
+    .tool-content{
+        display:none;
+    }
+    .qrcodesj {
+        width: 160px;
+        height: 165px;
+        position: fixed;
+        right: 20px;
+        top: 430px;
+        background: #FFF url(./images/two.jpg);
+        background-size: contain;
+        border: 1px solid #EEE;
+    }
+    .w100{
+        width: 100%;
+    }
+    .sidemenu dd{
+        cursor:pointer;
+    }
+    .w50{
+        width: 50px;
+    }
+    </style>
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../index.html" class="logo"></a>
+            <div class="link clear">
+                <a href="../index.html">返回主页</a>
+                <a href="javascript:history.go(-1)">返回上一级</a>
+            </div>
+
+        </div>
+    </div>
+    
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>关于我们</h1>
+            <h2>About Us</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../images/features-bg.jpg", "../images/features-bg.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+ 
+    <div class="container clear">
+        <div class="side tool-nav-bar">
+            <dl class="sidemenu">
+                <dt>关于我们 </dt>
+                <dd><a href="aboutus.html">公司介绍</a></dd>
+                <dd class=select>联系我们</dd>
+                <dd><a href="joinus.html">加入我们</a> </dd>
+                <dd><a href="User Agreement.html">用户协议</a></dd>
+            </dl>
+
+        </div>
+        <div class="main">
+            <div class="main-head">联系我们</div>
+            <dl class="main-contact clear">
+                <dd>
+                    <i class="icon qq">&#xe606;</i>
+                    <b>QQ群</b>
+                    <span>1号群：659199050<!--<em class="icon">&#xe620;<cite class="qq"></cite></em>--></span>
+                </dd>
+                <dd>
+                    <a href="#" target="_blank"><i class="icon weibo">&#xe605;</i></a>
+                    <b>新浪微博</b>
+                    <span><a href="#" target="_blank">赏金战役</a></span>
+                </dd>
+                <dd>
+                    <i class="icon wechat">&#xe604;</i>
+                    <b>官方微信</b>
+                    <span>sjzygame</span>
+                </dd>
+&nbsp;
+            </dl>
+            &emsp;
+            <div class="main-text padding-bottom">
+                <b>　　客服QQ</b>
+                <p>　　赏金客服1—狂蜂———QQ：3336507603</p>
+                <p>　　赏金客服2—艾斯特——QQ：357626364</p>
+                <p>　　赏金客服3—雷斯———QQ：2128260863</p>
+                <p>　　赏金客服4—穆得———QQ：2128284274</p>
+                <p>　　赏金客服5—羽刃———QQ：2128268748</p>
+                <br />
+                <p>　　投诉建议——————QQ：877201213</p>
+
+
+                <b>　　服务热线</b>
+                <p>　　0512——50330703</p>
+
+                <b>　　服务时间</b>
+                <p>　　工作日&emsp;9:00~18:00</p>
+                <b>　　公司地址</b>
+                <p>　　运营中心：&nbsp;&nbsp;&nbsp;江苏省昆山市前进东路隆祺国际C栋2606</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="qrcodesj"></div>
+    <div class="downdiv">
+        <a href="javascript:void(0)" target="_blank">下载赏金战役</a>
+    </div> -->
+
+    <script type="text/javascript" src="../js/foot2.js"></script>
+
+</body>
+</html>

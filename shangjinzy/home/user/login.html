@@ -1,0 +1,202 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-用户中心-用户登录</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../css/animate.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/base.css" rel="stylesheet" />
+
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/jquery.backstretch.min.js"></script>
+    <script src="../../js/wow.min.js"></script>
+    <script src="../../js/main2.js"></script>
+    <script src="../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="../../images/favicon.png">
+
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../index.html" class="logo"></a>
+             <ul class="menu clear" id="menu">
+                <li><i class="icon">&#xe601;</i><a href="../../index.html">首页</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe609;</i><a href="#">交易中心</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe600;</i><a href="../../game/Farm.html">游戏介绍</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe608;</i><a href="../../new.html">游戏公告</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe60a;</i><a href="../../about/aboutus.html">关于我们</a><i class="icon arrow">&#xe603;</i></li>
+            </ul> 
+
+            <div class="link clear">
+                    <!-- <a href="">用户中心</a> -->
+                    <a href="#">退出</a>
+            </div>
+            <div class="switch" id="switch"><i></i></div>
+        </div>
+    </div>
+    
+
+
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>用户中心</h1>
+            <h2>User Center</h2>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../images/features-bg.jpg", "../../images/features-bg.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+
+<form action="" method="post">
+    <div class="loginbox">
+        <div class="loginbox-inner">
+            <div class="loginbox-inner-head">淘金通行证登录</div>
+            <div class="loginbox-inner-form">
+
+                <div class="form-group">
+                    <div class="form-group-addon no-right-border">手　　机</div>
+                    <div class="form-group-input stretch">
+                        <input class="stretch" data-val="true" data-val-regex="手机号格式错误" data-val-regex-pattern="^1[0-9]{10}" data-val-required="请填写手机号" id="Phone" name="Phone" type="text" value="" />
+                    </div>
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="Phone" data-valmsg-replace="true"></span>
+
+                <div class="form-group">
+                    <div class="form-group-addon no-right-border">密　　码</div>
+                    <div class="form-group-input stretch">
+                        <input type="password" class="stretch" id="PasswordText" />
+                        <input data-val="true" data-val-required="请填写密码" id="Password" name="Password" type="hidden" value="" />
+                    </div>
+
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+
+                <div class="form-group">
+                    <div class="form-group-addon no-right-border">图片验证</div>
+                    <div class="form-group-input stretch">
+                        <input class="stretch" data-val="true" data-val-regex="验证码错误" data-val-regex-pattern="^[A-Za-z0-9]+$" data-val-required="请填写验证码" id="VCode" maxLength="4" name="VCode" type="text" value="" />
+                    </div>
+                    <div class="form-group-addon no-left-border code">
+                        <a id="changeImg" style="margin-right: 0;"><canvas id="canvas" width="120" height="40"></canvas></a>
+                        <script src="../../js/code.js"></script>
+                    </div>
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="VCode" data-valmsg-replace="true"></span>
+
+                <div class="form-group">
+                    <input type="button" value="立即登录" class="button button-color-1 button-stretch" onclick="return PreSubmit()" />
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="Err" data-valmsg-replace="true"></span>
+
+                <div class="form-group clear">
+                    <a class="check" id="check">记住账号</a>
+                    <a href="findPassword.html">忘记密码</a>
+                    <a href="reg.html">账号注册</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+<script type="text/javascript">
+    $(function () {
+        if (!IsWebDesk()) {
+            $("#Phone").attr('type', 'tel');
+           
+        }
+
+        $("#Phone").val(getCookie("Phone"));
+        if (getCookie("Phone") != "") {
+            $("#check").removeClass("check");
+            $("#check").addClass("ischeck");
+        }
+        $("#check").click(function () {
+            if ($(this).hasClass("ischeck")) {
+                $(this).removeClass("ischeck");
+                $(this).addClass("check");
+            } else {
+                $(this).removeClass("check");
+                $(this).addClass("ischeck");
+            }
+        });
+    });
+
+
+    function PreSubmit() {
+
+        if ($("#check").hasClass("ischeck")) {
+            setCookie("Phone", $("#Phone").val(), 90);
+        } else {
+            setCookie("Phone", "", 90);
+        }
+        if ($("#PasswordText").val()!=""){
+            $("#Password").val(md5($("#PasswordText").val() + $("#PasswordText").val()));
+            $("form").submit();
+        } else {
+            alert("请输入完整的表单信息");
+            return false;
+        }
+    }
+
+    function setCookie(name, value, expires) {
+        var date = new Date();
+        date.setTime(date.getTime() + expires * 24 * 3600 * 1000);
+        document.cookie = name + "=" + escape(value) + ";expires=" + date.toGMTString();
+
+    }
+
+    function getCookie(name) {
+        var prefix = name + "="
+        var cookieStartIndex = document.cookie.indexOf(prefix)
+        if (cookieStartIndex == -1)
+            return null
+        var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+        if (cookieEndIndex == -1)
+            cookieEndIndex = document.cookie.length
+        return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+    }
+
+</script>
+    <script type="text/javascript" src="../../js/foot1.js"></script>
+   
+</body>
+</html>

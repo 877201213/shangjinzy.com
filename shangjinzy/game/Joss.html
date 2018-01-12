@@ -1,0 +1,263 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-守卫先锋介绍</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/main2.js"></script>
+    <script src="../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../images/favicon.png">
+
+
+
+    <style type="text/css">
+        .select{
+            color: #FF6600;
+        }
+        .tool-content{
+            display:none;
+        }
+        .qrcodesj {
+            width: 160px;
+            height: 165px;
+            position: fixed;
+            right: 20px;
+            top: 430px;
+            background: #FFF url(../images/two.jpg);
+            background-size: contain;
+            border: 1px solid #EEE;
+        }
+        .w100{
+            width: 100%;
+        }
+        .sidemenu dd{
+            cursor:pointer;
+        }
+        .w50{
+            width: 50px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="header">
+    <div class="container clear">
+        <a href="../index.html" class="logo"></a>
+
+
+        <div class="link clear">
+            <a href="../index.html">返回主页</a>
+            <a href="javascript:history.go(-1)">返回上一级</a>
+
+        </div>
+
+    </div>
+</div>
+
+
+<style type="text/css">
+    .newslist a:visited {
+        color: #aaa;
+    }
+</style>
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>游戏简介</h1>
+            <h2>Game Intro</h2>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../images/features-green.jpg", "../images/features-green.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+<div class="container clear">
+    <div class="side">
+        <dl class="sidemenu">
+            <dt>游戏资料</dt>
+
+            <dd class=select>
+                <a href="#">游戏介绍</a></dd>
+            <dd ><a href="Video.html">视频资料</a></dd>
+            <dd><a href="guide.html">新手指南</a></dd>
+        </dl>
+
+
+
+
+
+
+    </div>
+    <div class="main">
+        <div class="main-head">游戏介绍</div>
+
+        <dl class="main-farm-menu">
+            <dd><a href="Farm.html">游戏介绍</a></dd>
+            <dd><a href="Arms.html">士兵介绍</a></dd>
+            <dd><a href="Barr.html">兵营介绍</a></dd>
+            <dd><a href="Prop.html">道具介绍</a></dd>
+            <dd><a href="Joss.html"  class="select">守卫先锋介绍</a></dd>
+        </dl>
+
+
+        <div class="main-farm">
+            <p>
+                守卫先锋用于保护您的士兵生产不被这个世界所影响。
+                如果您没有时间时刻关注您的兵工厂，没有关系，我们都给你想到了。
+                您可以通过商城购买宝石或者集结士兵的时候随机获得到宝石，
+                那么这些宝石可以激活下面的守卫先锋，一起来看看吧。
+            </p>
+            <dl class="main-farm-joss clear">
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/game/1.jpg" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：<b>指挥官</b></span>
+                        <span>介绍：保障兵营稳定工作，减少故障</span>
+                        <span>兑换：黄宝石x5(有效期48小时)</span>
+                    </div>
+                </dd>
+
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/game/2.jpg" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：<b>补给员</b></span>
+                        <span>介绍：保障兵营不会能源匮乏</span>
+                        <span>兑换：紫宝石x5(有效期48小时)</span>
+                    </div>
+                </dd>
+
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/game/3.jpg" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：<b>统领</b></span>
+                        <span>介绍：保障兵营不受外敌危害</span>
+                        <span>兑换：蓝宝石x5(有效期48小时)</span>
+                    </div>
+                </dd>
+
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/game/4.jpg" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：<b>巨人</b></span>
+                        <span>介绍：保障产兵数量最大化</span>
+                        <span>兑换：绿宝石x5(有效期48小时)</span>
+                    </div>
+                </dd>
+
+                <dd class="clear">
+                    <div class="img">
+                        <img src="../images/game/5.jpg" />
+                    </div>
+                    <div class="txt">
+                        <span>名称：<b>狂信徒</b></span>
+                        <span>介绍：创造特色兵种，但必须放弃其他士兵</span>
+                        <span>兑换：基地等级达到6级以上（包含6级）才可以激活</span>
+                    </div>
+                </dd>
+
+            </dl>
+
+            <p class="color-3" style="text-align: center">
+                <b>守卫先锋是由宝石兑换激活，不同宝石激活不同的守卫先锋。都有哪些宝石呢？
+                    <br>我们如何得到宝石呢？请参考下面的表格。</b>
+            </p>
+
+            <div class="tablebox">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>名称</th>
+                        <th>激活守卫先锋</th>
+                        <th>获取方式</th>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/game/11111.png" width="30" /></td>
+                        <td>绿宝石</td>
+                        <td>巨人</td>
+                        <td>随机获得</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/game/22222.png" width="30" /></td>
+                        <td>紫宝石</td>
+                        <td>补给员</td>
+                        <td>随机获得、商店购买</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/game/33333.png" width="30" /></td>
+                        <td>蓝宝石</td>
+                        <td>统领</td>
+                        <td>随机获得、商店购买</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/game/44444.png" width="30" /></td>
+                        <td>黄宝石</td>
+                        <td>指挥官</td>
+                        <td>随机获得、商店购买</td>
+                    </tr>
+                    <tr>
+                        <td><img src="../images/Prop/1111.jpg" width="30" ></td>
+                        <td>迅影、克罗<br>羽刃、亚特</td>
+                        <td>狂信徒</td>
+                        <td>神机营随机获得</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+   <script src="../js/foot2.js"></script>   
+</body>
+</html>

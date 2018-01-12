@@ -1,0 +1,463 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-积分榜</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <link href="../css/animate.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/base.css" rel="stylesheet" />
+    <link href="../js/countdown/activ.css" rel="stylesheet" />
+    <script src="../js/jquery-1.11.3.min.js"></script>
+    <script src="../js/jquery.backstretch.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/main2.js"></script>
+    <script src="../js/utilities.js"></script>
+    <link rel="stylesheet" href="../js/countdown/jquery.countdown.css" />
+    <script src="../js/countdown/jquery.countdown.js"></script>
+	<script src="../js/countdown/script.js"></script>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../images/favicon.png">
+
+	<style>
+		.font14{
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body style="height: auto;">
+
+
+<div class="header">
+    <div class="container clear">
+        <a href="../index.html" class="logo"></a>
+        <div class="link clear">
+            <a href="../index.html">返回主页</a>
+            <a href="javascript:history.go(-1)">返回上一级</a>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container clear" style="margin-top: 6%;width: 100%;">
+
+    <div class="main">
+        <div style="text-align: center;">
+			<img src="../images/score/head.png"/> 
+			<div id="rightbox-top">
+    			<a><img src="../images/score/countdown1.png" style="width: 200px;"></a>
+    			<div id="countdown1" style="margin-left: calc((100% - 450px)/2);    transform: scale(0.7);"></div>
+    			<a><img src="../images/score/countdown2.png" style="width: 200px;"></a>
+    			<div id="countdown2" style="margin-left: calc((100% - 450px)/2);    transform: scale(0.7);"></div>
+	    	</div>
+        </div>
+    </div>
+    
+    <div id="bigbox">
+    	<div id="leftbox">
+    		
+    	<table id="table1">
+    		<!--排行榜标题信息-->
+			<tr>
+				<th><a>名次</a></th>
+				<th><a>游戏昵称</a></th>
+				<th><a>用户ID</a></th>
+				<th><a>当前积分</a></th>
+			</tr>
+    		<!--排行榜第一名-->
+			<tr>
+				<th><img src="../images/score/no1.png" style="width:60px;height:60px"/></th>
+				<th><p> </p></th>
+				<th><p> </p></th>
+				<th> </th>
+			</tr>
+			<!--排行榜第二名-->
+			<tr>
+				<th><img src="../images/score/no2.png" style="width:60px;height:60px"/></th>
+				<th> </th>
+				<th> </th>
+				<th> </th>
+			</tr>
+			<!--排行榜第三名-->
+			<tr>
+				<th><img src="../images/score/no3.png" style="width:60px;height:60px"/></th>
+				<th> </th>
+				<th> </th>
+				<th> </th>
+			</tr>
+			<!--排行榜第四名-->
+			<tr>
+				<th>4</th>
+				<th> </th>
+				<th> </th>
+				<th> </th>
+			</tr>
+			<!--排行榜第五名-->
+			
+			<tr>
+				<th>5</th>
+				<th> </th>
+				<th> </th>
+				<th> </th>
+			</tr>
+			<!--排行榜第六名-->
+			<tr>
+				<th>6</th>
+				<th> </th>
+				<th> </th>
+				<th> </th>
+			</tr>
+				
+			<!--排行榜第七名-->
+			<tr>
+				<th>7</th>
+				<th> </th>
+				<th> </th>
+				<th> </th>
+			</tr>
+			<!--排行榜第八名-->
+			<tr>
+				<th>8</th>
+				<th> </th>
+				<th> </th>
+				<th> </th>
+			</tr>
+			<!--排行榜第九名-->
+			<tr>
+				<th>9</th>
+				<th> </th>
+				<th> </th>
+				<th> </th>
+			</tr>
+			<!--排行榜第十名-->
+			<tr>
+				<th>10</th>
+				<th> </th>
+				<th> </th>
+				<th> </th>
+			</tr>
+    	</table><br/><br/><br/>
+
+    	<table id="table2">
+    		<tr>
+				<th><a>我的积分:</a></th>
+				<th><a>0</a></th>
+			</tr>
+			<tr>
+				<th><a>我的排名:</a></th>
+				<th><a>暂未上榜</a></th>
+			</tr>
+			<tr>
+				<th><a>推广人数:</a></th>
+				<th><a>0</a></th>
+			</tr>
+    	</table>
+</div>
+        
+    	<div id ="centerbox">
+    		
+    		<img id="centerbox-img" src="../images/score/score.png" style="width: 100%; height: 90%;"/>
+			<div id="centerbox-center">
+				<img id="centerbox-up-img" src="../images/score/hero.png" style="width:400px"/>
+				<table id="centerbox-foot">
+				<tr>
+					<th></th>
+					<th><a>用户ID</a></th>
+					<th><a>昵称</a></th>
+					<th><a>奖励物品</a></th>
+				</tr>
+				<tr>
+					<th>第一名：</th>
+					<th><p> </p></th>
+					<th><p> </p></th>
+					<th>iphone8</th>
+				</tr>
+				<tr>
+					<th>第二名：</th>
+					<th><p> </p></th>
+					<th><p> </p></th>
+					<th>43寸小米液晶电视</th>
+				</tr>
+				<tr>
+					<th>第三名：</th>
+					<th><p> </p></th>
+					<th><p> </p></th>
+					<th>品牌山地自行车</th>
+				</tr>
+				</table>
+				<img id="centerbox-down-img" src="../images/score/hero.png" style="width:400px;"/>
+			</div>
+			
+    	</div>
+    	<style>
+    		.alignright{
+    			text-align: right;
+    		}
+    		.alignleft{
+    			text-align: left;
+    		}
+    		.w30{
+    			width: 30%;
+    		}
+    		.w40{
+    			width: 40%;
+    		}
+    		#week-table tr td:nth-child{
+    			text-align: right;
+    		}
+    		}
+    	</style>
+    	<div id="rightbox">
+    		<div id="rightbox-middle">
+    			<a><img src="../images/score/jiangli.png" style="width: 200px;margin-left: 10%;"/></a>
+    		</div>
+    		<div id="rightbox-foot">
+    			<div id="rightbox-foot-in" style="height: 650px;">
+    				<font id="weekbang" onclick="weekClick()">[周榜]</font>&emsp;
+    				<font id="monthbang" onclick="monthClick()">[月榜]</font><br />
+    			<table id="week-table">
+    				<!-- 第一名奖励-->
+    				<tr>
+    					<!--<td></td><br />
+    					<td style="text-align: left;" class="font18">第一名奖励</td>
+    					<td></td>-->
+    					<td class="font18" colspan="4">第一名奖励</td>
+    				</tr>
+    				<tr>
+    					<td class="font14 w30">昵称</td>
+    					<td class="font14 w40">ID</td>
+    					<td></td>
+    					<td></td>
+    				</tr>
+    				<tr class="borderbotm1">
+    					<td> </td>
+    					<td> </td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x1000</td>
+    				</tr>
+    				<!-- 第二名奖励-->
+    				<tr>
+    					<td class="font18" colspan="4">第二名奖励</td>
+    				</tr>
+    				<tr>
+    					<td class="font14">昵称</td>
+    					<td class="font14">ID</td>
+    					<td></td>
+    					<td></td>
+    				</tr>
+    				<tr class="borderbotm1">
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<!-- 第三名奖励-->
+    				<tr>
+    					<td class="font18" colspan="4">第三名奖励</td>
+    				</tr>
+    				<tr>
+    					<td class="font14">昵称</td>
+    					<td class="font14">ID</td>
+    					<td></td>
+    					<td></td>
+    				</tr>
+    				<tr class="borderbotm1">
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x200</td>
+    				</tr>
+    				<!-- 第四至十名奖励-->
+    				<tr>
+    					<td class="font18" colspan="4">第四至十名奖励</td>
+    				</tr>
+    				<tr>
+    					<td class="font14">昵称</td>
+    					<td class="font14">ID</td>
+    					<td></td>
+    					<td></td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/diamond.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/diamond.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/diamond.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/diamond.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/diamond.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/diamond.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr class="borderbotm1">
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/diamond.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<!-- 第十一至二十名奖励-->
+    				<tr class="borderbotm1">
+    					<td class="font18 pad10" colspan=2>第十一至二十名奖励</td>
+    					<td colspan=2 style="text-align: left;" class="font18"><img class="marginbotton8" src="../images/score/diamond.png">x200</td>
+    				</tr>
+    			</table>
+    			<table id="month-table" style="display: none;">
+    				<!-- 第一名奖励-->
+    				<tr>
+    					<td class="font18 padtop15" colspan=4>第一名奖励</td>
+    				</tr>
+    				<tr>
+    					<td class="font14 w30">昵称</td>
+    					<td class="font14 w40">ID</td>
+    					<td></td>
+    					<td></td>
+    				</tr>
+    				<tr class="borderbotm1">
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x10000</td>
+    				</tr>
+    				
+    				<!-- 第二名奖励-->
+    				<tr>
+    					<td class="font18 padtop15" colspan=4>第二名奖励</td>
+    				</tr>
+    				<tr>
+    					<td class="font14">昵称</td>
+    					<td class="font14">ID</td>
+    					<td></td>
+    					<td></td>
+    				</tr>
+    				<tr class="borderbotm1">
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x5000</td>
+    				</tr>
+    				<!-- 第三名奖励-->
+    				<tr>
+    					<td class="font18 padtop15" colspan=4>第三名奖励</td>
+    				</tr>
+    				<tr>
+    					<td class="font14">昵称</td>
+    					<td class="font14">ID</td>
+    					<td></td>
+    					<td></td>
+    				</tr>
+    				<tr class="borderbotm1">
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x2000</td>
+    				</tr>
+    				<!-- 第四至十名奖励-->
+    				<tr>
+    					<td class="font18 padtop15" colspan=4>第四至十名奖励</td>
+    				</tr>
+    				<tr>
+    					<td class="font14">昵称</td>
+    					<td class="font14">ID</td>
+    					<td></td>
+    					<td></td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr>
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<tr class="borderbotm1">
+    					<td></td>
+    					<td></td>
+    					<td style="text-align: right;"><img src="../images/score/coin.png"></td>
+    					<td style="text-align: left;" class="font18">x500</td>
+    				</tr>
+    				<!-- 第十一至二十名奖励-->
+    				<tr class="borderbotm1">
+    					<td class="font18 pad10" colspan=2>第十一至二十名奖励</td>
+    					<td colspan=2 style="text-align: left;" class="font18"><img class="marginbotton8" src="../images/score/diamond.png">x20000</td>
+    				</tr>
+    				<!-- 第二十一至一百名奖励-->
+    				<tr class="borderbotm1">
+    					<td class="font18 pad10" colspan=2>第二十一至一百名奖励</td>
+    					<td colspan=2 style="text-align: left;" class="font18"><img class="marginbotton8" src="../images/score/diamond.png">x5000</td>
+    				</tr>
+    				<!-- 第一百零一至五百名奖励-->
+    				<tr>
+    					<td class="font18 pad10" colspan=4>第一百零一至五百名奖励</td>
+    				</tr>
+    				<tr class="borderbotm1">
+    					<td colspan=4 style="text-align: center;" class="font18">各奖励价值20元的赏金推广福利包</td>
+    				</tr>
+    			</table>
+    			</div><!--foot-in end-->
+    		</div>
+    	</div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/foot2.js" ></script>
+</body>
+</html>

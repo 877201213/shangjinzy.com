@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-用户中心-联系资料</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link href="../../css/animate.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/base.css" rel="stylesheet" />
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/jquery.backstretch.min.js"></script>
+    <script src="../../js/wow.min.js"></script>
+    <script src="../../js/main2.js"></script>
+    <script src="../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="../../images/favicon.png">
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../index.html" class="logo"></a>
+             <ul class="menu clear" id="menu">
+                <li><i class="icon">&#xe601;</i><a href="../../index.html">首页</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe609;</i><a href="#">交易中心</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe600;</i><a href="../../game/Farm.html">游戏介绍</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe608;</i><a href="../../new.html">游戏公告</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe60a;</i><a href="../../about/aboutus.html">关于我们</a><i class="icon arrow">&#xe603;</i></li>
+            </ul> 
+
+            <div class="link clear">
+                    <!-- <a href="">用户中心</a> -->
+                    <a href="#">退出</a>
+            </div>
+            <div class="switch" id="switch"><i></i></div>
+        </div>
+    </div>
+    
+
+
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>用户中心</h1>
+            <h2>User Center</h2>
+        </div>
+    </div>
+</div>
+<script src="/News/Banner?Column=User" type="text/javascript"></script>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../images/features-bg.jpg","../../images/features-bg.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+
+<form action="" method="post"><div class="container clear">
+    <div class="side">
+        <ul id="side-menu-toggle" class="side-menu-toggle">
+
+    <li>
+        <div class="link">用户中心</div>
+        <ul class="side-menu-toggle-sub">
+            <li><a href="./index.html">账户概要</a></li>
+            <li><a href="./save.html">安全设置</a></li>
+            
+            <li><a href="./deposit.html" >账户充值</a></li>
+            <li><a href="./withdraw.html" >金币提现</a></li>
+            
+            <li><a href="./financeDetail.html" >金币明细</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <div class="link">拍卖行</div>
+        <ul class="side-menu-toggle-sub">
+            
+            <li><a href="./entrust.html">委托记录</a></li>
+            <li><a href="./tradeHistory.html" >交易记录</a></li>
+            
+            
+            
+            <li><a href="./give.html">士兵赠送</a></li>
+            <li><a href="./giveHistory.html">赠送记录</a></li>
+        </ul>
+    </li>
+
+
+    <li class=open>
+        <div class="link">推广中心</div>
+        <ul class="side-menu-toggle-sub side-menu-toggle-sub-show">
+            <!-- <li><a href="./popLink.html" >推广链接</a></li> -->
+            <li><a href="./popDetail.html" >推广列表</a></li>
+            <li><a href="./popReward.html" >推广奖励</a></li>
+            <li><a href="./fillReferId.html" >补推广码</a></li>
+            <!--
+            <li><a href="/User/PopResources" >推广资料</a></li>
+            -->
+            <li><a href="./popContact.html" class=select>联系资料</a></li>
+            <li><a href="./popTutor.html" >我的导师</a></li>
+        
+              <!--
+            <li><a href="/User/PopComplaintList" >投诉列表</a></li>
+            -->
+
+        </ul>
+    </li>
+
+
+</ul>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        var Toggle = function (el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+        }
+
+        Toggle.prototype.dropdown = function (e) {
+            var $el = e.data.el;
+            $this = $(this),
+			$next = $this.next();
+
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+
+            if (!e.data.multiple) {
+                $el.find('.side-menu-toggle-sub').not($next).slideUp().parent().removeClass('open');
+            };
+
+        }
+
+        var toggle = new Toggle($('#side-menu-toggle'), false);
+
+    });
+</script>
+
+    </div>
+    <div class="main">
+        <div class="uc-head uc-head-border">联系资料</div>
+
+        <div class="uc-form">
+
+
+
+            <div class="form-group">
+                <div class="form-group-addon">手机号码</div>
+                <div class="form-group-input stretch">
+                    <input class="stretch no-left-border" id="Phone" name="Phone" placeholder="请输入手机号" type="text" value="" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-group-addon">微信账号</div>
+                <div class="form-group-input stretch">
+                    <input class="stretch no-left-border" id="WeChat" name="WeChat" placeholder="请输入微信账号" type="text" value="" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-group-addon">QQ 号码</div>
+                <div class="form-group-input stretch">
+                    <input class="stretch no-left-border" id="QQ" name="QQ" placeholder="请输入QQ号码" type="text" value="" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="button-color-1 button-stretch" value="提交" onclick="return Check();" />
+            </div>
+            <span class="field-validation-valid" data-valmsg-for="Err" data-valmsg-replace="true"></span>
+       </div>
+
+
+        <div class="message message-help">
+            温馨提示：<br />
+            1. 完善您的联系资料可以方便您推荐的用户及机构团队成员联系您.<br />
+            2. 联系方式至少填写一种。
+        </div>
+
+    </div>
+</div>
+</form>
+<script type="text/javascript">
+    function Check() {
+        //三者需填其一
+        if ($("#Phone").val() == "" && $("#QQ").val() == "" && $("#WeChat").val() == "") {
+            alert("您必须填写一个联系方式");
+            return false;
+        }
+
+        //手机验证
+        if ($("#Phone").val() != "" && !checkMobile($("#Phone").val())) {
+            alert("输入手机号码不正确");
+            return false;
+        }
+
+        //QQ验证
+        if ($("#QQ").val() != "" && (isNaN($("#QQ").val()) || $("#QQ").val().length < 5 || $("#QQ").val().length > 12)) {
+            alert("输入QQ号码不正确");
+            return false;
+        }
+
+    }
+
+    function checkMobile(str) {
+        var re = /^1\d{10}$/
+        if (re.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    
+    function Switch() {
+
+        var mark = false;
+
+        if ($("#switchbtn").hasClass("off")) {
+            mark = true;
+        } else {
+            mark = false;
+        }
+
+        $.ajax({
+            type: "post",
+            data: { mark: mark },
+            url: "/User/ShowContactSwitch",
+            datatype: "json",
+        beforeSend: function () {
+
+        },
+        complete: function () {
+
+        },
+        success: function (result) {
+            if (result.success) {
+                if (mark) {
+                    $("#switchbtn").removeClass("off");
+                    $("#switchbtn").addClass("on");
+                    $("#switchbtn i").html("开启");
+                    $("#Switch").html("开启").removeClass("color-1").addClass("color-4");
+                }
+                else {
+                    $("#switchbtn").removeClass("on");
+                    $("#switchbtn").addClass("off");
+                    $("#switchbtn i").html("关闭");
+                    $("#Switch").html("关闭").removeClass("color-4").addClass("color-1");
+                }
+            } else {
+                alert("暂时无法设置！")
+            }
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("设置失败，请稍候再试！")
+        }
+
+    });
+    }
+
+
+
+</script>
+
+
+
+    <script type="text/javascript" src="../../js/foot1.js"></script>
+
+   
+</body>
+</html>

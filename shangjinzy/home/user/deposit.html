@@ -1,0 +1,299 @@
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>赏金战役-用户中心-金币充值</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="../../css/animate.css" rel="stylesheet" />
+    <link href="../../css/style.css" rel="stylesheet" />
+    <link href="../../css/base.css" rel="stylesheet" />
+
+    <script src="../../js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/jquery.backstretch.min.js"></script>
+    <script src="../../js/wow.min.js"></script>
+    <script src="../../js/main2.js"></script>
+    <script src="../../js/utilities.js"></script>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="../../images/favicon.png">
+
+    <script type="text/javascript">
+        $(function () {
+            //$("#ChannelId").val("1");
+
+
+            $("#Amount").keyup(function () {
+                $(this).val(FormatIntValue($(this).val()));
+            });
+
+            function FormatIntValue(value) {
+                value = value.replace(/[^\d]/g, "");
+                return value;
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+        var Host = "";
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?13e1d46753f89164b5098f5757d7234f";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+    
+ 
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container clear">
+            <a href="../../index.html" class="logo"></a>
+             <ul class="menu clear" id="menu">
+                <li><i class="icon">&#xe601;</i><a href="../../index.html">首页</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe609;</i><a href="#">交易中心</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe600;</i><a href="../../game/Farm.html">游戏介绍</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe608;</i><a href="../../new.html">游戏公告</a><i class="icon arrow">&#xe603;</i></li>
+                <li ><i class="icon">&#xe60a;</i><a href="../../about/aboutus.html">关于我们</a><i class="icon arrow">&#xe603;</i></li>
+            </ul> 
+
+            <div class="link clear">
+                    <!-- <a href="">用户中心</a> -->
+                    <a href="#">退出</a>
+            </div>
+            <div class="switch" id="switch"><i></i></div>
+        </div>
+    </div>
+    
+
+
+<div class="subbanner-small" onclick="LinkTo();">
+    <div class="subbanner-inner">
+        <div class="container">
+            <h1>用户中心</h1>
+            <h2>User Center</h2>
+        </div>
+    </div>
+</div>
+<script src="/News/Banner?Column=User" type="text/javascript"></script>
+<script type="text/javascript">
+    var banners = [];
+    var images = ["../../images/features-bg.jpg", "../../images/features-bg.jpg"];
+    if (banners.length > 0) {
+        $(".subbanner-inner").hide();
+        $(".subbanner-small").attr("style", "cursor:pointer;");
+        images = [];
+        for (i = 0; i < banners.length; i++) {
+            images.push(banners[i]["img"]);
+        }
+    }
+
+    $(function () {
+        $('.subbanner-small').backstretch(images, { fade: 750, duration: 3000 });
+    });
+
+    function LinkTo() {
+        if (banners.length > 0) {
+            for (i = 0; i < banners.length; i++) {
+                if ($(".backstretch img").attr("src") == banners[i]["img"] && banners[i]["url"] != "") {
+                    window.location.href = banners[i]["url"];
+                }
+            }
+        }
+    }
+
+</script>
+
+
+
+
+<form action="" method="post">
+    <input data-val="true" data-val-number="字段 ChannelId 必须是一个数字。" data-val-required="ChannelId 字段是必需的。" id="ChannelId" name="ChannelId" type="hidden" value="1" />    
+    <div class="container clear">
+        <div class="side">
+            <ul id="side-menu-toggle" class="side-menu-toggle">
+
+    <li class=open>
+        <div class="link">用户中心</div>
+        <ul class="side-menu-toggle-sub side-menu-toggle-sub-show">
+            <li><a href="./index.html" >账户概要</a></li>
+            <li><a href="./save.html">安全设置</a></li>
+            
+            <li><a href="./deposit.html" class=select>账户充值</a></li>
+            <li><a href="./withdraw.html" >金币提现</a></li>
+            
+            <li><a href="./financeDetail.html" >金币明细</a></li>
+        </ul>
+    </li>
+
+    <li >
+        <div class="link">拍卖行</div>
+        <ul class="side-menu-toggle-sub ">
+            
+            <li><a href="./entrust.html" >委托记录</a></li>
+            <li><a href="./tradeHistory.html" >交易记录</a></li>
+            
+            
+            
+            <li><a href="./give.html" >士兵赠送</a></li>
+            <li><a href="./giveHistory.html" >赠送记录</a></li>
+        </ul>
+    </li>
+
+
+    <li >
+        <div class="link">推广中心</div>
+        <ul class="side-menu-toggle-sub ">
+            <!-- <li><a href="./popLink.html" >推广链接</a></li> -->
+            <li><a href="./popDetail.html" >推广列表</a></li>
+            <li><a href="./popReward.html" >推广奖励</a></li>
+            <li><a href="./fillReferId.html" >补推广码</a></li>
+            <!--
+            <li><a href="/User/PopResources" >推广资料</a></li>
+            -->
+            <li><a href="./popContact.html" >联系资料</a></li>
+            <li><a href="./popTutor.html" >我的导师</a></li>
+        
+              <!--
+            <li><a href="/User/PopComplaintList" >投诉列表</a></li>
+            -->
+
+        </ul>
+    </li>
+
+
+</ul>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        var Toggle = function (el, multiple) {
+            this.el = el || {};
+            this.multiple = multiple || false;
+
+            // Variables privadas
+            var links = this.el.find('.link');
+            // Evento
+            links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+        }
+
+        Toggle.prototype.dropdown = function (e) {
+            var $el = e.data.el;
+            $this = $(this),
+			$next = $this.next();
+
+            $next.slideToggle();
+            $this.parent().toggleClass('open');
+
+            if (!e.data.multiple) {
+                $el.find('.side-menu-toggle-sub').not($next).slideUp().parent().removeClass('open');
+            };
+
+        }
+
+        var toggle = new Toggle($('#side-menu-toggle'), false);
+
+    });
+</script>
+
+        </div>
+
+        <div class="main">
+
+            <div class="uc-head uc-head-border">账户充值</div>
+            <div class="message message-info">
+                温馨提示：<br />
+                <span class="color-1">1. 最低充值11金币，且单笔低于20000金币</span><br />
+                2. 充值比例：1元=1金币<br />
+                <span class="color-1">3. 不能充值0结尾的数额，如20金币，100金币等</span>
+            </div>
+            <div class="uc-form">
+
+                <div class="form-group">
+                    <div class="form-group-addon no-right-border">充值金额</div>
+                    <div class="form-group-input stretch">
+                        <input class="stretch" data-val="true" data-val-number="字段 Amount 必须是一个数字。" data-val-range="最低充值11金币，单笔低于20000金币" data-val-range-max="19999" data-val-range-min="11" data-val-required="请填写金额" id="Amount" name="Amount" placeholder="充值金额" type="text" value="" />
+                    </div>
+                    <div class="form-group-addon form-group-addon-white no-left-border">金币</div>
+
+                </div>
+                <span class="field-validation-valid" data-valmsg-for="Amount" data-valmsg-replace="true"></span>
+                <div class="color-1" style="text-align:center;"></div>
+                <dl class="paymode clear">
+                    <dt><i></i><b>第三方支付平台</b></dt>
+                    <dd cid="1" class=select><cite class="wechatpay" title="微信支付"></cite></dd>
+                   
+                        <dd cid="4" ><cite class="alipay" title="支付宝"></cite></dd>
+
+                    
+                </dl>
+                <dl class="paymode clear">
+                    <dt><i></i><b>银行支付</b><em onclick="$('.hidebank').toggle();">更多银行</em></dt>
+                        <dd cid="1041000"><cite class="boc" title="中国银行"></cite></dd>
+                            <dd cid="1031000"><cite class="abc" title="中国农业银行"></cite></dd>
+                            <dd cid="1021000"><cite class="icbc" title="中国工商银行"></cite></dd>
+                            <dd cid="1051000"><cite class="ccb" title="建设银行"></cite></dd>
+                            <dd cid="3085840" class="hidebank"><cite class="cmb" title="招商银行"></cite></dd>
+                            <dd cid="3012900" class="hidebank"><cite class="comm" title="交通银行"></cite></dd>
+                            <dd cid="3093910" class="hidebank"><cite class="cib" title="兴业银行"></cite></dd>
+                            <dd cid="3021000" class="hidebank"><cite class="citic" title="中信银行"></cite></dd>
+                            <dd cid="3051000" class="hidebank"><cite class="cmbc" title="中国民生银行"></cite></dd>
+                            <dd cid="4031000" class="hidebank"><cite class="psbc" title="中国邮政储蓄银行"></cite></dd>
+                </dl>
+
+                <div class="form-group">
+                    <input type="submit" class="button button-color-1 button-stretch" value="确认充值" />
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="uc-head">最近10笔充值记录</div>
+            <div class="tablebox">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>充值时间</th>
+                            <th>充值金额</th>
+                            <th>充值渠道</th>
+                            <th>充值状态</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td class="algin" colspan="5">没有找到相关记录</td>
+                            </tr>
+
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</form>
+<script type="text/javascript">
+    $(".paymode dd").click(function () {
+        $(".paymode dd").removeClass("select");
+        $(this).addClass("select");
+        $("#ChannelId").val($(this).attr("cid"))
+    });
+</script>
+   
+
+   <script type="text/javascript" src="../../js/foot1.js"></script>
+</body>
+</html>
